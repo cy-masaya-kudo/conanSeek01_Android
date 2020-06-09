@@ -1,0 +1,46 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:splitMotionEvents="false"
+    tools:context="jp.co.cybird.android.conanseek.activity.top.LeftMenuFragment">
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/leftMenuCard"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/btn_leftmenu_card"/>
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/leftMenuKunren"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/btn_leftmenu_kunren"/>
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/leftMenuJiken"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/btn_leftmenu_jiken"/>
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/leftMenuGacha"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/btn_leftmenu_gacha" />
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/leftMenuShop"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/btn_leftmenu_shop"/>
+
+</LinearLayout>

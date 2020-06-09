@@ -1,0 +1,3 @@
+<resources>
+    <bool name="LIB_GCM_IS_UNITY">false</bool>
+</resources>

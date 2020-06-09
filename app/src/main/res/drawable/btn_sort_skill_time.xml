@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <item android:state_pressed="true"
+        android:drawable="@mipmap/btn_skill_time_2" />
+    <item android:state_selected="true"
+        android:drawable="@mipmap/btn_skill_time_2" />
+    <item android:state_enabled="true" android:state_pressed="false"
+        android:drawable="@mipmap/btn_skill_time" />
+
+</selector>

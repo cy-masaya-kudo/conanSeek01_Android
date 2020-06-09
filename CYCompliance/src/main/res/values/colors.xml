@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 利用規約同意ダイアログのWebViewの背景色 -->
+	<color name="agreement_dialog_base_background">@android:color/white</color>
+
+	<!-- 年齢確認ダイアログの基本背景色 -->
+	<color name="minors_dialog_base_background">@android:color/white</color>
+</resources>

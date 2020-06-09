@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/LIB_GCM_PREF_CATEGORY1_TITLE" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/LIB_GCM_PREF_KEY_WILLSENDNOTIFICATION"
+            android:title="@string/LIB_GCM_PREF_KEY_WILLSENDNOTIFICATION_TITLE" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:dependency="@string/LIB_GCM_PREF_KEY_WILLSENDNOTIFICATION"
+            android:key="@string/LIB_GCM_PREF_KEY_WILLPLAYSOUND"
+            android:summary="@string/LIB_GCM_PREF_KEY_WILLPLAYSOUND_SUMMARY"
+            android:title="@string/LIB_GCM_PREF_KEY_WILLPLAYSOUND_TITLE" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:dependency="@string/LIB_GCM_PREF_KEY_WILLSENDNOTIFICATION"
+            android:key="@string/LIB_GCM_PREF_KEY_WILLVIBRATE"
+            android:summary="@string/LIB_GCM_PREF_KEY_WILLVIBRATE_SUMMARY"
+            android:title="@string/LIB_GCM_PREF_KEY_WILLVIBRATE_TITLE" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

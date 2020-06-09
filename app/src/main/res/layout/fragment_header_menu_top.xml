@@ -1,0 +1,71 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/wrapper_width"
+    android:layout_height="@dimen/headermenu_top_height"
+    android:background="@mipmap/status_background_main"
+    tools:context="jp.co.cybird.android.conanseek.activity.top.HeaderMenuFragment">
+
+    <include
+        android:id="@+id/header_status"
+        layout="@layout/fragment_header_menu_status"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headermenu_status_height"
+        android:layout_marginTop="@dimen/headermenu_padding_top"/>
+    
+    <RelativeLayout
+        android:layout_width="@dimen/headermenu_status_ext_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_marginTop="@dimen/headermenu_status_ext_top"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <jp.co.cybird.android.conanseek.common.BaseButton
+                android:id="@+id/btn_gift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                android:src="@mipmap/btn_gift" />
+
+            <jp.co.cybird.android.conanseek.common.BaseButton
+                android:id="@+id/btn_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                android:src="@mipmap/btn_notice" />
+
+            <jp.co.cybird.android.conanseek.common.BaseButton
+                android:id="@+id/btn_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                android:src="@mipmap/btn_setting" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/present_count"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="616dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/corner_present_count"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_header"
+        android:textColor="#ffffff"
+        android:text="30"/>
+
+</FrameLayout>

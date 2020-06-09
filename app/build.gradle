@@ -1,0 +1,118 @@
+apply plugin: 'com.android.application'
+//app
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        manifestPlaceholders = [app_name: "コナン仮想世界"]//ホーム画面に表示されるアプリ名
+        applicationId "jp.co.cybird.android.app.conanseek01"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 7
+        versionName "1.0.4"
+    }
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+
+            buildConfigField("boolean", "DEBUG_SETTING", "true")
+        }
+
+        release {
+            debuggable false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+
+            buildConfigField("boolean", "DEBUG_SETTING", "false")
+        }
+    }
+    signingConfigs {
+        //実際にリリースしているアプリは別のキーストアで署名しています。
+        //http://repo.sf.intra.cybird.co.jp/svn/SPMCO/branches/jp.co.cybird.android.app.conanseek01_Android/
+        souling {
+            keyAlias 'conanseek01'
+            keyPassword 'souling0410'
+            storeFile file('/Users/wa_nikun/Desktop/conanseek01')
+            storePassword 'souling0410'
+        }
+        cybird {
+            if (project.hasProperty('signingStoreFile')) {
+                storeFile file(signingStoreFile)
+                storePassword signingStorePassword
+                keyAlias signingKeyAlias
+                keyPassword signingKeyPassword
+            }
+        }
+    }
+    flavorDimensions "api", "proper"
+    productFlavors {
+        souling {
+            dimension "proper"
+            manifestPlaceholders = [app_name: "(s)コナン仮想世界"]//ホーム画面に表示されるアプリ名
+            applicationId = 'jp.souling.android.conanseek01'
+            signingConfig signingConfigs.souling
+        }
+        cybird {
+            dimension "proper"
+            manifestPlaceholders = [app_name: "コナン仮想世界"]//ホーム画面に表示されるアプリ名
+//            signingConfig signingConfigs.souling
+            signingConfig signingConfigs.cybird
+        }
+        develop {
+            dimension "api"
+        }
+        production {
+            dimension "api"
+        }
+    }
+    variantFilter { variant ->
+        def names = variant.flavors*.name
+        def type = variant.buildType.name
+        if (names.contains("production") && names.contains("souling")) {
+            setIgnore(true)
+        } else if (names.contains("souling") && type == "release") {
+            setIgnore(true)
+        }
+    }
+    applicationVariants.all { variant ->
+        if (variant.buildType.name.equals("release")) {
+            variant.outputs.all { output ->
+                if (outputFileName != null && outputFileName.endsWith('.apk')) {
+                    // Rename APK
+                    def applicationId = "conanseek01"
+                    def versionCode = variant.mergedFlavor.versionCode
+                    def versionName = variant.mergedFlavor.versionName
+                    def date = new java.text.SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date())
+                    def newName = "${applicationId}(${flavorName})_${variant.buildType.name}_r${versionCode}_v${versionName}_${date}.apk"
+                    outputFileName = newName
+                }
+            }
+        }
+    }
+    lintOptions {
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+}
+repositories {
+//    maven { url 'http://52.196.232.116/releases/repos/' }
+}
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api 'com.android.support:appcompat-v7:28.0.0'
+    api 'com.android.support:support-v4:28.0.0'
+    api 'com.google.android.gms:play-services-ads:18.2.0'
+    api 'com.google.android.gms:play-services-gcm:17.0.0'
+
+    implementation project(':CYCompliance')
+    implementation project(':CybirdUtility_1.0.2')
+    implementation project(':POPgate')
+    implementation project(':cryptolib')
+    implementation project(':gency')
+    implementation project(':gcm')
+    implementation project(':cy_gcm')
+}

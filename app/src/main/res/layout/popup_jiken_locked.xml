@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/wrapper">
+
+
+    <FrameLayout
+        android:id="@+id/wrapper_inner"
+        android:layout_width="@dimen/dialog_normal_size_width"
+        android:layout_height="@dimen/dialog_normal_size_height"
+        android:layout_gravity="center">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/wrapper">
+
+
+            <FrameLayout
+                android:id="@+id/wrapper_inner"
+                android:layout_width="@dimen/dialog_normal_size_width"
+                android:layout_height="@dimen/dialog_normal_size_height"
+                android:layout_gravity="center">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dialog_border_width"
+                    android:background="#000000"/>
+
+                <ImageView
+                    android:id="@+id/image_dialog_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dialog_border_width"
+                    android:alpha="0.3"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/keepout_popup"/>
+
+                <ImageView
+                    android:id="@+id/dialog_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="@dimen/dialog_normal_margin"
+                    android:src="@mipmap/title_back" />
+                <TextView
+                    android:id="@+id/dialog_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dialog_title_height"
+                    android:layout_gravity="center|top"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dialog_normal_margin"
+                    android:text="旧公家屋敷の日本間Lv.3"
+                    android:textColor="#ffd740"
+                    android:textSize="@dimen/text_size_header"
+                    android:src="@mipmap/title_back" />
+
+
+
+                <FrameLayout
+                    android:layout_width="265dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="70dp"
+                    android:padding="1dp"
+                    android:background="#000000">
+                    <ImageView
+                        android:id="@+id/thumb_mini"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:id="@+id/jouken_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:text="開放条件\nカード"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size_regular"
+                        android:background="@mipmap/locked"/>
+
+                </FrameLayout>
+
+                <jp.co.cybird.android.conanseek.common.BaseButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginBottom="@dimen/dialog_normal_margin"
+                    android:src="@drawable/btn_unlock"
+                    android:id="@+id/btn_unlock"/>
+
+                <jp.co.cybird.android.conanseek.common.BaseButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/btn_back"
+                    android:background="@null"
+                    android:layout_marginLeft="@dimen/dialog_close_left"
+                    android:layout_marginTop="@dimen/dialog_close_top"
+                    android:id="@+id/dialog_close" />
+
+            </FrameLayout>
+
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/text_corner_radius"/>
+
+
+    </FrameLayout>
+
+
+</FrameLayout>

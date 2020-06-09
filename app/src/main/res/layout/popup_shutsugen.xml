@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/wrapper">
+
+    <FrameLayout
+        android:id="@+id/wrapper_inner"
+        android:layout_width="@dimen/dialog_normal_size_width"
+        android:layout_height="@dimen/dialog_normal_size_height"
+        android:layout_gravity="center"
+        android:background="@mipmap/popup_gacha_bg">
+
+
+        <TextView
+            android:id="@+id/shutsugen_subtitle"
+            android:layout_width="@dimen/dialog_shutsugen_subtitle_width"
+            android:layout_height="@dimen/dialog_shutsugen_subtitle_height"
+            android:layout_marginTop="@dimen/dialog_shutsugen_subtitle_top"
+            android:layout_marginLeft="@dimen/dialog_shutsugen_subtitle_left"
+            android:lineSpacingMultiplier=".9"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="12\n34"
+            android:singleLine="false"
+            android:textSize="@dimen/text_size_header"
+            android:textColor="#ffffff"/>
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="@dimen/dialog_normal_margin"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/title_shutsugen" />
+
+
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/btn_back"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/dialog_close_left"
+            android:layout_marginTop="@dimen/dialog_close_top"
+            android:id="@+id/dialog_close" />
+
+        <FrameLayout
+            android:layout_width="@dimen/dialog_shutsugen_viewpager_width"
+            android:layout_height="@dimen/dialog_shutsugen_viewpager_height"
+            android:layout_marginLeft="@dimen/dialog_shutsugen_viewpager_left"
+            android:layout_marginTop="@dimen/dialog_shutsugen_viewpager_top"
+            android:layout_centerVertical="true">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/card_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v4.view.ViewPager>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dialog_shutsugen_viewpager_left"
+            android:layout_marginTop="@dimen/dialog_shutsugen_viewpager_top">
+
+            <TextView
+                android:id="@+id/pagecontrol"
+                android:layout_width="@dimen/dialog_shutsugen_viewpager_width"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dialog_shutsugen_viewpager_height"
+                android:paddingTop="@dimen/dialog_normal_content_div"
+                android:text="●"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_header"
+                android:textColor="#000000"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/dialog_shutsugen_meters_width"
+            android:layout_height="@dimen/dialog_shutsugen_meters_height"
+            android:layout_marginLeft="@dimen/dialog_shutsugen_meters_left"
+            android:layout_marginTop="@dimen/dialog_shutsugen_meters_top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dialog_shutsugen_meters_padding"
+                android:paddingRight="@dimen/dialog_shutsugen_meters_padding"
+                android:layout_gravity="center">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/shutsugen_text_left"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_header"
+                        android:textColor="#000000"
+                        android:text="12"/>
+                    <TextView
+                        android:id="@+id/shutsugen_text_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textSize="@dimen/text_size_header"
+                        android:textColor="#000000"
+                        android:text="12"/>
+                </FrameLayout>
+
+                <include
+                    android:id="@+id/shutsugen_ssr"
+                    layout="@layout/view_shutsugen_bar" />
+                <include
+                    android:id="@+id/shutsugen_sr"
+                    layout="@layout/view_shutsugen_bar" />
+                <include
+                    android:id="@+id/shutsugen_r"
+                    layout="@layout/view_shutsugen_bar" />
+                <include
+                    android:id="@+id/shutsugen_hn"
+                    layout="@layout/view_shutsugen_bar" />
+                <include
+                    android:id="@+id/shutsugen_n"
+                    layout="@layout/view_shutsugen_bar" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

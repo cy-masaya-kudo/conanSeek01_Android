@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- GencyGCM設定画面に関して -->
+    <string name="LIB_GCM_PREF_CATEGORY1_TITLE">Settings</string>
+
+    <string name="LIB_GCM_PREF_KEY_WILLSENDNOTIFICATION">lib_gcm_willSendNotification</string>
+    <string name="LIB_GCM_PREF_KEY_WILLSENDNOTIFICATION_TITLE">Send me notifications</string>
+    <string name="LIB_GCM_PREF_CATEGORY2_TITLE">Details</string>
+
+    <string name="LIB_GCM_PREF_KEY_WILLPLAYSOUND">lib_gcm_willPlaySound</string>
+    <string name="LIB_GCM_PREF_KEY_WILLPLAYSOUND_SUMMARY">Play sound when notifications come</string>
+    <string name="LIB_GCM_PREF_KEY_WILLPLAYSOUND_TITLE">Sound</string>
+
+    <string name="LIB_GCM_PREF_KEY_WILLVIBRATE">lib_gcm_willVibrate</string>
+    <string name="LIB_GCM_PREF_KEY_WILLVIBRATE_SUMMARY">Vibration feedback for notifications</string>
+    <string name="LIB_GCM_PREF_KEY_WILLVIBRATE_TITLE">Vibrate</string>
+
+    <string name="LIB_GCM_PREF_KEY_CUSTOMIZEd">tickets_fulfilled</string>
+
+    <string name="LIB_GCM_GOOGLE_ACCOUNT_MISSING_INFO">Please login with your Google Account.</string>
+
+    <string name="LIB_GCM_PREF_CATEGORY3_TITLE">Development</string>
+    <string name="LIB_GCM_PREF_KEY_IS_TESTING">lib_gcm_is_testing</string>
+    <string name="LIB_GCM_PREF_KEY_IS_TESTING_SUMMARY_TURE">In parameters url, test=1"</string>
+    <string name="LIB_GCM_PREF_KEY_IS_TESTING_SUMMARY_FALSE">In parameters url, test=0"</string>
+    <string name="LIB_GCM_PREF_KEY_IS_TESTING_TITLE">is testing</string>
+    <string name="LIB_GCM_PREF_KEY_DOES_INCLUDE_SANDBOX">lib_gcm_does_include_sandbox</string>
+    <string name="LIB_GCM_PREF_KEY_DOES_INCLUDE_SANDBOX_SUMMARY_TURE">url="https://sandbox.push.example.com/XXXX"</string>
+    <string name="LIB_GCM_PREF_KEY_DOES_INCLUDE_SANDBOX_SUMMARY_FALSE">url="https://push.example.com/XXXX"</string>
+    <string name="LIB_GCM_PREF_KEY_DOES_INCLUDE_SANDBOX_TITLE">include "sandbox" in urls</string>
+    <string name="LIB_GCM_PREF_KEY_IS_NORMAL">lib_gcm_is_normal</string>
+    <string name="LIB_GCM_PREF_KEY_IS_NORMAL_SUMMARY_TURE">act normally</string>
+    <string name="LIB_GCM_PREF_KEY_IS_NORMAL_SUMMARY_FALSE">show bundle no matter what act is</string>
+    <string name="LIB_GCM_PREF_KEY_IS_NORMAL_TITLE">validate act</string>
+
+    <string name="LIB_GCM_DIALOG_TITLE">Agreement</string>
+    <string name="LIB_GCM_DIALOG_AGREE">Agree</string>
+    <string name="LIB_GCM_DIALOG_DECLINE">Decline</string>
+
+    <string name="LIB_GCM_DIALOG_WARNING_TITLE">CAUTION</string>
+    <string name="LIB_GCM_DIALOG_WARNING_BODY">Without "Google Play Services", you will NOT receive any notification.\n\n Do you want to install it now? </string>
+    <string name="LIB_GCM_DIALOG_WARNING_INSTALL">Install</string>
+    <string name="LIB_GCM_DIALOG_WARNING_REJECT">Do NOT show again</string>
+    <string name="LIB_GCM_DIALOG_WARNING_PENDING">Later</string>
+
+    <bool name="LIB_GCM_IS_UNITY">false</bool>
+</resources>

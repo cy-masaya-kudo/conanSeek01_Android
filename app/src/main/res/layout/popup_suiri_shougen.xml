@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/wrapper">
+
+
+    <FrameLayout
+        android:id="@+id/wrapper_inner"
+        android:layout_width="@dimen/dialog_normal_size_width"
+        android:layout_height="@dimen/dialog_normal_size_height"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dialog_border_width"
+            android:background="#000000"
+            android:src="@mipmap/popup_background_blue"
+            android:scaleType="fitXY"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/text_corner_radius"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dialog_normal_margin"
+            android:layout_gravity="center|top"
+            android:src="@mipmap/title_shougen_ichiran" />
+
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/btn_back"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/dialog_close_left"
+            android:layout_marginTop="@dimen/dialog_close_top"
+            android:id="@+id/dialog_close" />
+
+        <FrameLayout
+            android:layout_width="420dp"
+            android:layout_height="160dp"
+            android:background="@drawable/corner_radius_blue_wrapper"
+            android:layout_gravity="center">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+            </android.support.v4.view.ViewPager>
+
+            <TextView
+                android:id="@+id/pagecontrol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_header"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="10dp"
+                android:text="0000"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp">
+            <Button
+                android:id="@+id/btn_dummy"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginRight="5dp"
+                android:text="江戸川コナン"
+                android:textSize="@dimen/text_size_header"
+                android:textColor="#ffffff"
+                android:background="#50000000"/>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</FrameLayout>

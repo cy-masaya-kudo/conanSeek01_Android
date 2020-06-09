@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="103dp"
+    android:layout_height="190dp">
+
+    <FrameLayout
+        android:layout_width="@dimen/frame_card_deck_waku_width"
+        android:layout_height="@dimen/frame_card_deck_waku_height"
+        android:layout_gravity="center|top"
+        android:padding="@dimen/frame_card_deck_waku_padding"
+        android:background="@mipmap/waku_deck">
+
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:id="@+id/cell_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:background="@null"/>
+
+        <ImageView
+            android:id="@+id/cell_fav"
+            android:src="@mipmap/card_mark_key"
+            android:scaleType="fitCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"/>
+
+        <ImageView
+            android:id="@+id/cell_skill"
+            android:src="@mipmap/skill_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:scaleType="fitCenter"/>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/frame_card_deck_waku_height"
+        android:paddingTop="@dimen/frame_card_deck_cont_div">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/deck_name"/>
+
+        <TextView
+            android:id="@+id/skill_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="test"
+            android:textSize="@dimen/text_size_header"
+            android:textAlignment="center"
+            android:textColor="#ffffff"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/skill_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_header"
+        android:layout_gravity="bottom"
+        android:textColor="#000000"
+        android:paddingBottom="@dimen/frame_card_deck_cont_div"
+        android:layout_marginBottom="@dimen/frame_card_deck_cont_div"
+        android:text="12344"/>
+
+</FrameLayout>

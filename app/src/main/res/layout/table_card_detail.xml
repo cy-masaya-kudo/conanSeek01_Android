@@ -1,0 +1,123 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    tools:context="jp.co.cybird.android.conanseek.activity.card.CardListPageFragment">
+
+    <FrameLayout
+        android:layout_width="396dp"
+        android:layout_height="238dp"
+        android:background="@mipmap/card_fragment_detail_bg"
+        android:layout_gravity="center">
+
+        <FrameLayout
+            android:layout_width="153dp"
+            android:layout_height="207dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="25dp"
+            android:padding="2dp"
+            android:background="#20000000">
+            <ImageView
+                android:id="@+id/card_face_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fbecb1"
+                android:scaleType="fitXY" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="152dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="34dp"
+            android:layout_marginBottom="18dp">
+
+            <FrameLayout
+                android:layout_width="122dp"
+                android:layout_height="24dp">
+
+                <TextView
+                    android:id="@+id/card_number_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_size_normal"
+                    android:text="No.12"/>
+
+                <ImageView
+                    android:id="@+id/card_rare_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:layout_marginRight="1dp"
+                    android:background="@null"
+                    android:src="@mipmap/rarity_ssr"
+                    android:layout_gravity="center|right"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/card_title_label"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center|left"
+                android:text="ジョディ・スターリング"
+                android:textColor="#000000"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_marginTop="26dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:layout_gravity="bottom">
+
+                <TextView
+                    android:id="@+id/card_skill_name_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="46dp"
+                    android:gravity="center|left"
+                    android:textSize="@dimen/text_size_header"
+                    android:textColor="#000000"
+                    android:text="モノクロ解除"/>
+
+                <ImageView
+                    android:id="@+id/card_skill_icon_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/skill_color_icon"
+                    android:background="@null"
+                    android:layout_gravity="right|top"/>
+
+                <TextView
+                    android:id="@+id/card_skill_detal_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="71dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center|left"
+                    android:layout_gravity="bottom"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_header"
+                    android:text="fdsafdsafdsafdsa fdsafdsafdsa fdsafdsafdsa"/>
+
+
+            </FrameLayout>
+        </FrameLayout>
+
+
+
+        <ImageButton
+            android:id="@+id/btn_card_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/btn_fav_key"
+            android:layout_marginTop="@dimen/dialog_normal_border_width"
+            android:layout_marginRight="@dimen/dialog_normal_border_width"
+            android:layout_gravity="right"/>
+
+    </FrameLayout>
+
+</FrameLayout>

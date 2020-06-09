@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <jp.co.cybird.android.conanseek.common.BaseButton
+        android:id="@+id/cell_bg_button"
+        android:layout_width="230dp"
+        android:layout_height="64dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/bg"/>
+
+    <FrameLayout
+        android:id="@+id/cell_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/cell_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/icon_megane"/>
+        <TextView
+            android:id="@+id/cell_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="54dp"
+            android:layout_marginTop="12dp"
+            android:text="ログインボーナス"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_header"/>
+        <TextView
+            android:id="@+id/cell_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="54dp"
+            android:layout_marginTop="34dp"
+            android:text="ログインボーナス"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_header"/>
+        <TextView
+            android:id="@+id/cell_date"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="178dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="あと30日"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_min"/>
+    </FrameLayout>
+
+</FrameLayout>

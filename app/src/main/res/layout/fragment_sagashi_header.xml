@@ -1,0 +1,152 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/wrapper_width"
+    android:layout_height="@dimen/headermenu_sagashi_height"
+    android:background="@mipmap/status_background_monosagashi"
+    tools:context="jp.co.cybird.android.conanseek.activity.top.HeaderMenuFragment">
+
+
+    <FrameLayout
+        android:layout_width="180dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="44dp"
+        android:background="@drawable/timer_corner_radius">
+
+        <ImageView
+            android:id="@+id/timer_blank"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/meter_blank"
+            android:layout_margin="2dp"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/timer_meter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/meter_full"
+            android:layout_margin="2dp"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/timer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:textColor="#ffffff"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_regular"
+            android:text="00:00"/>
+
+    </FrameLayout>
+
+    <jp.co.cybird.android.conanseek.common.BaseButton
+        android:id="@+id/pause_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:background="@null"
+        android:src="@drawable/btn_pause"/>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="1dp"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/target_1"
+            android:layout_width="92dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="3dp"
+            android:text=""
+            android:textSize="@dimen/text_size_header"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:background="@drawable/target_corner_radius"/>
+        <TextView
+            android:id="@+id/target_2"
+            android:layout_width="92dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="3dp"
+            android:text=""
+            android:textSize="@dimen/text_size_header"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:background="@drawable/target_corner_radius"/>
+        <TextView
+            android:id="@+id/target_3"
+            android:layout_width="92dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="3dp"
+            android:text=""
+            android:textSize="@dimen/text_size_header"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:background="@drawable/target_corner_radius"/>
+        <TextView
+            android:id="@+id/target_4"
+            android:layout_width="92dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="3dp"
+            android:text=""
+            android:textSize="@dimen/text_size_header"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:background="@drawable/target_corner_radius"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="19dp"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/target_5"
+            android:layout_width="92dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="3dp"
+            android:text=""
+            android:textSize="@dimen/text_size_header"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:background="@drawable/target_corner_radius"/>
+        <TextView
+            android:id="@+id/target_6"
+            android:layout_width="92dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="3dp"
+            android:text=""
+            android:textSize="@dimen/text_size_header"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:background="@drawable/target_corner_radius"/>
+        <TextView
+            android:id="@+id/target_7"
+            android:layout_width="92dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="3dp"
+            android:text=""
+            android:textSize="@dimen/text_size_header"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:background="@drawable/target_corner_radius"/>
+        <TextView
+            android:id="@+id/target_8"
+            android:layout_width="92dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="3dp"
+            android:text=""
+            android:textSize="@dimen/text_size_header"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:background="@drawable/target_corner_radius"/>
+    </LinearLayout>
+
+</FrameLayout>

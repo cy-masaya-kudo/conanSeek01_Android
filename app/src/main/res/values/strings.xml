@@ -1,0 +1,50 @@
+<resources>
+
+    <string name="app_name">コナン仮想世界</string>
+
+    <string name="api_proc_charge_coin_1">jp.co.cybird.conanseek01.coin.charge1</string>
+    <string name="api_proc_charge_coin_5">jp.co.cybird.conanseek01.coin.charge5</string>
+    <string name="api_proc_charge_coin_12">jp.co.cybird.conanseek01.coin.charge12</string>
+    <string name="api_proc_charge_coin_24">jp.co.cybird.conanseek01.coin.charge24</string>
+    <string name="api_proc_charge_coin_50">jp.co.cybird.conanseek01.coin.charge50</string>
+    <string name="api_proc_charge_coin_100">jp.co.cybird.conanseek01.coin.charge100</string>
+
+    <string name="api_proc_gacha_coin_one">jp.co.cybird.conanseek01.gacha.coin.normal</string>
+    <string name="api_proc_gacha_coin_ten">jp.co.cybird.conanseek01.gacha.coin.10ren</string>
+    <string name="api_proc_gacha_ticket_one">jp.co.cybird.conanseek01.gacha.ticket.normal</string>
+    <string name="api_proc_gacha_ticket_ten">jp.co.cybird.conanseek01.gacha.ticket.10ren</string>
+    <string name="api_proc_gacha_card">jp.co.cybird.conanseek01.gacha.card</string>
+
+    <string name="api_proc_trade_kunren">jp.co.cybird.conanseek01.content.trade.kunren</string>
+    <string name="api_proc_trade_jiken">jp.co.cybird.conanseek01.content.trade.jiken</string>
+
+    <string name="api_proc_trade_megane5">jp.co.cybird.conanseek01.point.trade.megane5</string>
+    <string name="api_proc_trade_megane30">jp.co.cybird.conanseek01.point.trade.megane30</string>
+    <string name="api_proc_trade_megane65">jp.co.cybird.conanseek01.point.trade.megane65</string>
+    <string name="api_proc_trade_heartmax">jp.co.cybird.conanseek01.point.trade.heartmax</string>
+
+    <string name="api_proc_debug_coin1">jp.co.cybird.conanseek01.debug.coin1</string>
+    <string name="api_proc_debug_coin0">jp.co.cybird.conanseek01.debug.coin0</string>
+    <string name="api_proc_debug_coinmax">jp.co.cybird.conanseek01.debug.coinmax</string>
+    <string name="api_proc_debug_heart1">jp.co.cybird.conanseek01.debug.heart1</string>
+    <string name="api_proc_debug_heart0">jp.co.cybird.conanseek01.debug.heart0</string>
+    <string name="api_proc_debug_heartmax">jp.co.cybird.conanseek01.debug.heartmax</string>
+    <string name="api_proc_debug_megane1">jp.co.cybird.conanseek01.debug.megane1</string>
+    <string name="api_proc_debug_megane0">jp.co.cybird.conanseek01.debug.megane0</string>
+    <string name="api_proc_debug_meganemax">jp.co.cybird.conanseek01.debug.meganemax</string>
+    <string name="api_proc_debug_ticket1">jp.co.cybird.conanseek01.debug.ticket1</string>
+    <string name="api_proc_debug_ticket0">jp.co.cybird.conanseek01.debug.ticket0</string>
+    <string name="api_proc_debug_ticketmax">jp.co.cybird.conanseek01.debug.ticketmax</string>
+
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="LIB_GCM_SENDERID">418447103491</string>
+
+    <integer name="AgreementEulaVersion">1</integer>
+    <integer name="MinorEulaVersion">1</integer>
+</resources>

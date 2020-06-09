@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/wrapper">
+
+
+    <FrameLayout
+        android:id="@+id/wrapper_inner"
+        android:layout_width="@dimen/dialog_normal_size_width"
+        android:layout_height="@dimen/dialog_normal_size_height"
+        android:layout_gravity="center">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dialog_border_width"
+            android:background="#000000" />
+
+        <FrameLayout
+            android:id="@+id/palette_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_dialog_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dialog_border_width"
+                android:scaleType="fitXY" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dialog_border_width">
+
+                <ImageView
+                    android:id="@+id/kaiwa_chara_1"
+                    android:layout_width="500dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginLeft="-160dp"
+                    android:scaleType="fitCenter" />
+
+                <ImageView
+                    android:id="@+id/kaiwa_chara_2"
+                    android:layout_width="500dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="bottom|center"
+                    android:scaleType="fitCenter" />
+
+                <ImageView
+                    android:id="@+id/kaiwa_chara_3"
+                    android:layout_width="500dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginLeft="160dp"
+                    android:scaleType="fitCenter" />
+
+                <ImageView
+                    android:id="@+id/komado_chara_1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="-160dp"
+                    android:layout_gravity="center"/>
+
+                <ImageView
+                    android:id="@+id/komado_chara_2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"/>
+
+                <ImageView
+                    android:id="@+id/komado_chara_3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="160dp"
+                    android:layout_gravity="center"/>
+
+                <ImageView
+                    android:id="@+id/angou"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/title_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dialog_border_width"
+            android:background="@mipmap/title">
+
+            <TextView
+                android:id="@+id/kaiwa_title_text"
+                android:layout_width="195dp"
+                android:layout_height="23dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="@dimen/text_size_normal" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/kaiwa_container"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/dialog_border_width"
+                android:background="@mipmap/balloon_speech">
+
+                <TextView
+                    android:id="@+id/kaiwa_message_text"
+                    android:layout_width="542dp"
+                    android:layout_height="59dp"
+                    android:layout_margin="@dimen/dialog_border_width"
+                    android:gravity="left|top"
+                    android:padding="4dp"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_size_normal" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="69dp"
+                android:layout_marginLeft="@dimen/dialog_border_width"
+                android:background="@mipmap/balloon_name">
+
+                <TextView
+                    android:id="@+id/kaiwa_hito_text"
+                    android:layout_width="127dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="@dimen/dialog_normal_border_width"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_size_header" />
+            </FrameLayout>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/text_corner_radius" />
+
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:id="@+id/dialog_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dialog_normal_content_div"
+            android:layout_marginTop="@dimen/dialog_normal_content_div"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/btn_skip" />
+
+
+    </FrameLayout>
+
+
+</FrameLayout>

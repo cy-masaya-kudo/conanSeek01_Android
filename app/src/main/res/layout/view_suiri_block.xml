@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/title_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/title_evidence_blue"/>
+    <ImageView
+        android:id="@+id/komado_image"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="#ffffff"
+        android:layout_gravity="center|bottom"/>
+</FrameLayout>

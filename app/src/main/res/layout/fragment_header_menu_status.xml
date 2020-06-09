@@ -1,0 +1,210 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/headermenu_padding_left"
+        android:paddingLeft="@dimen/headermenu_status_glass_div"
+        android:background="@mipmap/status_space_glass">
+        <ImageView
+            android:id="@+id/header_status_megane_0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/headermenu_status_glass_div"
+            android:src="@drawable/status_megane"/>
+        <ImageView
+            android:id="@+id/header_status_megane_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/headermenu_status_glass_div"
+            android:src="@drawable/status_megane"/>
+        <ImageView
+            android:id="@+id/header_status_megane_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/headermenu_status_glass_div"
+            android:src="@drawable/status_megane"/>
+        <ImageView
+            android:id="@+id/header_status_megane_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/headermenu_status_glass_div"
+            android:src="@drawable/status_megane"/>
+        <ImageView
+            android:id="@+id/header_status_megane_4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/headermenu_status_glass_div"
+            android:src="@drawable/status_megane"/>
+        <TextView
+            android:id="@+id/header_status_megane_text"
+            android:layout_width="@dimen/headermenu_status_text_width"
+            android:layout_height="match_parent"
+            android:text="+9999"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_header"
+            android:gravity="center"
+            android:textColor="#ffffff"/>
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:id="@+id/header_status_megane_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="@dimen/headermenu_status_glass_div"
+            android:src="@mipmap/status_plus" />
+    </LinearLayout>
+
+    <!--237-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@mipmap/status_space_heart"
+        android:layout_marginLeft="@dimen/headermenu_status_div"
+        android:paddingLeft="@dimen/headermenu_status_heart_div">
+
+        <ImageView
+            android:id="@+id/header_status_heart_0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="@dimen/headermenu_status_heart_div"
+            android:src="@drawable/status_heart"/>
+        <ImageView
+            android:id="@+id/header_status_heart_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="@dimen/headermenu_status_heart_div"
+            android:src="@drawable/status_heart"/>
+        <ImageView
+            android:id="@+id/header_status_heart_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="@dimen/headermenu_status_heart_div"
+            android:src="@drawable/status_heart"/>
+        <ImageView
+            android:id="@+id/header_status_heart_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="@dimen/headermenu_status_heart_div"
+            android:src="@drawable/status_heart"/>
+        <ImageView
+            android:id="@+id/header_status_heart_4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="@dimen/headermenu_status_heart_div"
+            android:src="@drawable/status_heart"/>
+        <ImageView
+            android:id="@+id/header_status_heart_5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="@dimen/headermenu_status_heart_div"
+            android:src="@drawable/status_heart"/>
+        <ImageView
+            android:id="@+id/header_status_heart_6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="@dimen/headermenu_status_heart_div"
+            android:src="@drawable/status_heart"/>
+        <ImageView
+            android:id="@+id/header_status_heart_7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="@dimen/headermenu_status_heart_div"
+            android:src="@drawable/status_heart"/>
+        <ImageView
+            android:id="@+id/header_status_heart_8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="@dimen/headermenu_status_heart_div"
+            android:src="@drawable/status_heart"/>
+        <ImageView
+            android:id="@+id/header_status_heart_9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="@dimen/headermenu_status_heart_div"
+            android:src="@drawable/status_heart"/>
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:id="@+id/header_status_heart_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="@dimen/headermenu_status_heart_div"
+            android:src="@mipmap/status_plus" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/headermenu_status_div"
+        android:paddingLeft="@dimen/headermenu_status_div"
+        android:background="@mipmap/status_space_ticket">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/status_ticket"/>
+        <TextView
+            android:id="@+id/header_status_ticket_text"
+            android:layout_width="@dimen/headermenu_status_text_width"
+            android:layout_height="match_parent"
+            android:text="+9999"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_header"
+            android:gravity="center"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/headermenu_status_div"
+        android:background="@mipmap/status_space_coin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/status_coin"/>
+
+        <TextView
+            android:id="@+id/header_status_coin_text"
+            android:layout_width="@dimen/headermenu_status_text_width"
+            android:layout_height="match_parent"
+            android:text="+9999"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_header"
+            android:gravity="center"
+            android:textColor="#ffffff"/>
+
+
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:id="@+id/header_status_coin_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:src="@mipmap/status_plus" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

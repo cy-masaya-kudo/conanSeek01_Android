@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    tools:context="jp.co.cybird.android.conanseek.activity.card.CardListPageFragment">
+
+    <RelativeLayout
+        android:layout_width="@dimen/frame_card_cardlist_wrapper_width"
+        android:layout_height="@dimen/frame_card_cardlist_wrapper_height"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <include
+                layout="@layout/view_card_list_cell_with_title"
+                android:id="@+id/list_cell_0"
+                android:layout_width="@dimen/frame_card_cardlist_card_width"
+                android:layout_height="@dimen/frame_card_cardlist_card_with_title_height"
+                android:layout_marginRight="@dimen/frame_card_cardlist_card_margin_right"/>
+
+            <include
+                layout="@layout/view_card_list_cell_with_title"
+                android:id="@+id/list_cell_1"
+                android:layout_width="@dimen/frame_card_cardlist_card_width"
+                android:layout_height="@dimen/frame_card_cardlist_card_with_title_height"
+                android:layout_marginRight="@dimen/frame_card_cardlist_card_margin_right"/>
+
+            <include
+                layout="@layout/view_card_list_cell_with_title"
+                android:id="@+id/list_cell_2"
+                android:layout_width="@dimen/frame_card_cardlist_card_width"
+                android:layout_height="@dimen/frame_card_cardlist_card_with_title_height"
+                android:layout_marginRight="@dimen/frame_card_cardlist_card_margin_right"/>
+
+            <include
+                layout="@layout/view_card_list_cell_with_title"
+                android:id="@+id/list_cell_3"
+                android:layout_width="@dimen/frame_card_cardlist_card_width"
+                android:layout_height="@dimen/frame_card_cardlist_card_with_title_height"
+                android:layout_marginRight="@dimen/frame_card_cardlist_card_margin_right"/>
+
+            <include
+                layout="@layout/view_card_list_cell_with_title"
+                android:id="@+id/list_cell_4"
+                android:layout_width="@dimen/frame_card_cardlist_card_width"
+                android:layout_height="@dimen/frame_card_cardlist_card_with_title_height"
+                android:layout_marginRight="@dimen/frame_card_cardlist_card_margin_right"/>
+
+            <include
+                layout="@layout/view_card_list_cell_with_title"
+                android:id="@+id/list_cell_5"
+                android:layout_width="@dimen/frame_card_cardlist_card_width"
+                android:layout_height="@dimen/frame_card_cardlist_card_with_title_height"
+                android:layout_marginRight="@dimen/frame_card_cardlist_card_margin_right"/>
+
+            <include
+                layout="@layout/view_card_list_cell_with_title"
+                android:id="@+id/list_cell_6"
+                android:layout_width="@dimen/frame_card_cardlist_card_width"
+                android:layout_height="@dimen/frame_card_cardlist_card_with_title_height"
+                android:layout_marginRight="@dimen/frame_card_cardlist_card_margin_right"/>
+            <include
+                layout="@layout/view_card_list_cell_with_title"
+                android:id="@+id/list_cell_7"
+                android:layout_width="@dimen/frame_card_cardlist_card_width"
+                android:layout_height="@dimen/frame_card_cardlist_card_with_title_height"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <include
+                layout="@layout/view_card_list_cell_with_title"
+                android:id="@+id/list_cell_8"
+                android:layout_width="@dimen/frame_card_cardlist_card_width"
+                android:layout_height="@dimen/frame_card_cardlist_card_with_title_height"
+                android:layout_marginRight="@dimen/frame_card_cardlist_card_margin_right"/>
+
+            <include
+                layout="@layout/view_card_list_cell_with_title"
+                android:id="@+id/list_cell_9"
+                android:layout_width="@dimen/frame_card_cardlist_card_width"
+                android:layout_height="@dimen/frame_card_cardlist_card_with_title_height"
+                android:layout_marginRight="@dimen/frame_card_cardlist_card_margin_right"/>
+
+            <include
+                layout="@layout/view_card_list_cell_with_title"
+                android:id="@+id/list_cell_10"
+                android:layout_width="@dimen/frame_card_cardlist_card_width"
+                android:layout_height="@dimen/frame_card_cardlist_card_with_title_height"
+                android:layout_marginRight="@dimen/frame_card_cardlist_card_margin_right"/>
+
+            <include
+                layout="@layout/view_card_list_cell_with_title"
+                android:id="@+id/list_cell_11"
+                android:layout_width="@dimen/frame_card_cardlist_card_width"
+                android:layout_height="@dimen/frame_card_cardlist_card_with_title_height"
+                android:layout_marginRight="@dimen/frame_card_cardlist_card_margin_right"/>
+
+            <include
+                layout="@layout/view_card_list_cell_with_title"
+                android:id="@+id/list_cell_12"
+                android:layout_width="@dimen/frame_card_cardlist_card_width"
+                android:layout_height="@dimen/frame_card_cardlist_card_with_title_height"
+                android:layout_marginRight="@dimen/frame_card_cardlist_card_margin_right"/>
+
+            <include
+                layout="@layout/view_card_list_cell_with_title"
+                android:id="@+id/list_cell_13"
+                android:layout_width="@dimen/frame_card_cardlist_card_width"
+                android:layout_height="@dimen/frame_card_cardlist_card_with_title_height"
+                android:layout_marginRight="@dimen/frame_card_cardlist_card_margin_right"/>
+            <include
+                layout="@layout/view_card_list_cell_with_title"
+                android:id="@+id/list_cell_14"
+                android:layout_width="@dimen/frame_card_cardlist_card_width"
+                android:layout_height="@dimen/frame_card_cardlist_card_with_title_height"
+                android:layout_marginRight="@dimen/frame_card_cardlist_card_margin_right"/>
+
+            <include
+                layout="@layout/view_card_list_cell_with_title"
+                android:id="@+id/list_cell_15"
+                android:layout_width="@dimen/frame_card_cardlist_card_width"
+                android:layout_height="@dimen/frame_card_cardlist_card_with_title_height"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

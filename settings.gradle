@@ -1,0 +1,14 @@
+include ':app'
+include ':CYCompliance', ':POPgate', ':CybirdUtility_1.0.2'
+
+include ':cryptolib', ':gency'
+include ':gcm',':gcm_sub_toPUSH',':cy_cybirdid',':cy_gcm',':cy_gencydid'
+
+project(':cryptolib').projectDir = new File('./Gency/sub_module/cryptolib')
+project(':gency').projectDir = new File('./Gency/gency')
+project(':gcm').projectDir = new File('./Gency/sub_module/gcm')
+project(':gcm_sub_toPUSH').projectDir = new File('./Gency/sub_module/gcm_sub_toPUSH')
+project(':cy_cybirdid').projectDir = new File('./Gency/sub_module/cy_cybirdid')
+project(':cy_gcm').projectDir = new File('./Gency/sub_module/cy_gcm')
+project(':cy_gencydid').projectDir = new File('./Gency/sub_module/cy_gencydid')
+

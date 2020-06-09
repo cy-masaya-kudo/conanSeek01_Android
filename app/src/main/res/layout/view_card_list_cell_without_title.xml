@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/cell_text"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:textSize="@dimen/card_list_no_text_size"
+        android:gravity="bottom"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/frame_card_cardlist_card_card_height">
+
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:id="@+id/cell_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:background="@mipmap/card_bg_small"/>
+
+        <FrameLayout
+            android:id="@+id/card_selected_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:background="#50ff0000"></FrameLayout>
+
+        <ImageView
+            android:id="@+id/cell_new"
+            android:src="@mipmap/card_mark_new"
+            android:scaleType="fitCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/cell_fav"
+            android:src="@mipmap/card_mark_key"
+            android:scaleType="fitCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"/>
+
+        <ImageView
+            android:id="@+id/cell_skill"
+            android:src="@mipmap/skill_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:id="@+id/card_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:visibility="invisible"
+            android:src="@mipmap/mark_1"/>
+
+    </FrameLayout>
+
+
+</FrameLayout>

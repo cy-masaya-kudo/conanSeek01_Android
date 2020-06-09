@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/cell_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/frame_card_cardlist_card_text_height"
+        android:textSize="@dimen/card_list_no_text_size"
+        android:gravity="bottom"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/frame_card_cardlist_card_text_height"
+        android:layout_height="@dimen/frame_card_cardlist_card_card_height">
+
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:id="@+id/cell_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:background="@mipmap/card_bg_small"/>
+
+        <ImageView
+            android:id="@+id/cell_new"
+            android:src="@mipmap/card_mark_new"
+            android:scaleType="fitCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/cell_fav"
+            android:src="@mipmap/card_mark_key"
+            android:scaleType="fitCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:id="@+id/cell_skill"
+            android:src="@mipmap/skill_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitCenter"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

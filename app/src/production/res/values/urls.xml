@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="api">https://seek.conan-game.jp/api/</string>
+    <!--
+    <string name="api">http://192.168.11.3/conan-seek/htdocs/api/</string>
+    <string name="api">http://192.168.1.11/conan-seek/htdocs/api/</string>
+    -->
+    <string name="api_version_check">version_check.php</string>
+    <string name="api_tokuten_add">tokuten_add.php</string>
+    <string name="api_user_info">user_info.php</string>
+    <string name="api_user_create">user_create.php</string>
+
+    <string name="api_gacha_list">gacha_list.php</string>
+    <string name="api_gacha_fire">gacha_fire.php</string>
+
+    <string name="api_present_list">present_list.php</string>
+    <string name="api_present_fire">present_fire.php</string>
+
+    <string name="api_coin_charge">coin_charge.php</string>
+    <string name="api_point_fuyo">point_fuyo.php</string>
+    <string name="api_point_trade">point_trade.php</string>
+    <string name="api_file_download">file_download.php</string>
+
+    <string name="api_content_trade">content_trade.php</string>
+    <string name="api_transaction_commit">transaction_commit.php</string>
+    <string name="api_kunren_clear">kunren_clear.php</string>
+    <string name="api_jiken_clear">jiken_clear.php</string>
+
+    <string name="oshirase">http://seek.conan-game.jp/oshirase_android.php</string>
+    <string name="torihiki">https://seek.conan-game.jp/tokusho/googleplay.php</string>
+    <string name="kessai">https://seek.conan-game.jp/settlement/googleplay.php</string>
+    <string name="kiyaku">https://seek.conan-game.jp/terms/googleplay.php</string>
+    <string name="privacy">https://my.cybird.ne.jp/sp-inq/agreement?cont=MCP005&amp;url=1</string>
+    <string name="contact">https://my.cybird.ne.jp/sp-inq/MCP005/1</string>
+    <string name="miseinen">https://my.cybird.ne.jp/sp-inq/A00003/1</string>
+    <string name="help">https://seek.conan-game.jp/help.php</string>
+    <string name="howto_top">https://seek.conan-game.jp/howtoplay_android.php?id=000</string>
+    <string name="howto_jiken">https://seek.conan-game.jp/howtoplay_android.php?id=000</string>
+    <string name="howto_angou">https://seek.conan-game.jp/howtoplay_android.php?id=001</string>
+    <string name="howto_shougen">https://seek.conan-game.jp/howtoplay_android.php?id=002</string>
+
+
+</resources>

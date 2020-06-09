@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/wrapper">
+
+    <RelativeLayout
+        android:id="@+id/wrapper_inner"
+        android:layout_width="@dimen/dialog_caution_size_width"
+        android:layout_height="@dimen/dialog_caution_size_height"
+        android:layout_gravity="center"
+        android:background="@mipmap/popup_background_caution">
+
+        <ImageView
+            android:id="@+id/komado_image"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff"
+            android:layout_marginTop="@dimen/dialog_caution_margin"/>
+
+        <TextView
+            android:id="@+id/dialog_message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物証はこちらで良いですか？\n虫眼鏡を\n14 => 13"
+            android:textAlignment="center"
+            android:layout_centerInParent="true"
+            android:paddingTop="36dp"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_regular"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dialog_caution_margin">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <jp.co.cybird.android.conanseek.common.BaseButton
+                    android:id="@+id/dialog_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/btn_plain"
+                    android:background="@null"/>
+                <TextView
+                    android:id="@+id/dialog_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_regular"
+                    android:text="いいえ"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dialog_footer_button_div">
+                <jp.co.cybird.android.conanseek.common.BaseButton
+                    android:id="@+id/dialog_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/btn_plain"
+                    android:background="@null"/>
+                <TextView
+                    android:id="@+id/dialog_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_regular"
+                    android:text="はい"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

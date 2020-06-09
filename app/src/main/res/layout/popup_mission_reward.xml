@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/wrapper">
+
+    <RelativeLayout
+        android:id="@+id/wrapper_inner"
+        android:layout_width="@dimen/dialog_caution_size_width"
+        android:layout_height="@dimen/dialog_caution_size_height"
+        android:layout_gravity="center"
+        android:background="@mipmap/popup_background_caution">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/houshuu"
+            android:layout_marginTop="@dimen/dialog_normal_content_div"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:layout_marginTop="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/clearmission"/>
+
+        <TextView
+            android:id="@+id/reward_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="message"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_regular"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"/>
+
+        <TextView
+            android:id="@+id/reward_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="message"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_regular"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="※ガチャチケット、虫眼鏡が報酬の場合は、プレゼントボックスへ送られます。"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_header"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"/>
+
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:id="@+id/btn_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dialog_normal_content_div"
+            android:src="@mipmap/btn_ok"
+            android:background="@null"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:src="@mipmap/mission_reward_chara1"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:src="@mipmap/mission_reward_chara2"/>
+
+</FrameLayout>

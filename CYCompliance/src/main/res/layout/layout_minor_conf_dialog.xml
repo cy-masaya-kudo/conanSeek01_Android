@@ -1,0 +1,53 @@
+<jp.co.cybird.android.utils.CustomRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/layout_base" >
+
+    <LinearLayout
+        android:id="@+id/action_area"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dialog_action_area"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dialog_padding_around_button"
+        android:visibility="gone">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dialog_button_height"
+            android:id="@+id/dialog_negative_button"
+            android:layout_marginRight="@dimen/dialog_padding_around_button"
+            android:text="@string/minor_conf_decline"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dialog_button_height"
+            android:id="@+id/dialog_positive_button"
+            android:text="@string/minor_conf_agree"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webview_base"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dialog_padding_bet_title_body"
+        android:layout_above="@+id/action_area">>
+        <Button
+            android:id="@+id/retrybutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/retry"
+            android:visibility="gone" />
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"/>
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</jp.co.cybird.android.utils.CustomRelativeLayout>

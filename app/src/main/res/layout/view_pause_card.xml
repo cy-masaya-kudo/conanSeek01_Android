@@ -1,0 +1,44 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#70ffffaa">
+
+    <ImageView
+        android:id="@+id/card_face_image"
+        android:layout_width="@dimen/frame_card_deck_small_waku_width"
+        android:layout_height="@dimen/frame_card_deck_small_waku_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/card_bg_small"/>
+    <FrameLayout
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="35dp"
+        android:background="#80887722">
+        <ImageView
+            android:id="@+id/skill_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/skill_color_icon"/>
+        <TextView
+            android:id="@+id/skill_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="ターゲット"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_header"/>
+    </FrameLayout>
+    <TextView
+        android:id="@+id/skill_detail"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size_header"
+        android:layout_gravity="center_horizontal|bottom"
+        android:text="背景を"/>
+
+</FrameLayout>
+

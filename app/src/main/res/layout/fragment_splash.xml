@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fragment_wrapper"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/wrapper_width"
+        android:layout_height="@dimen/wrapper_height"
+        android:background="@mipmap/splash_bg">
+
+        <jp.co.cybird.android.conanseek.common.FlashingButton
+            android:id="@+id/splashButton"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="@dimen/splash_button_margin_bottom"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/splash_start" />
+
+
+        <FrameLayout android:id="@+id/popup_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:id="@+id/tutorial_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:id="@+id/effect_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+
+
+</FrameLayout>

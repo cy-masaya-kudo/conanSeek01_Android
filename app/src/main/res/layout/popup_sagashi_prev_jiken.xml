@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/wrapper">
+
+
+    <FrameLayout
+        android:id="@+id/wrapper_inner"
+        android:layout_width="@dimen/dialog_normal_size_width"
+        android:layout_height="@dimen/dialog_normal_size_height"
+        android:layout_gravity="center">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dialog_border_width"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/image_dialog_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.3"
+            android:layout_margin="@dimen/dialog_border_width"
+            android:scaleType="fitXY"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/text_corner_radius"/>
+
+        <ImageView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="@dimen/dialog_normal_margin"
+            android:src="@mipmap/title_back" />
+        <TextView
+            android:id="@+id/dialog_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dialog_title_height"
+            android:layout_gravity="center|top"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dialog_normal_margin"
+            android:text="阿笠博士の宝探しゲーム㈬"
+            android:textColor="#ffdd66"
+            android:textSize="@dimen/text_size_normal"
+            android:src="@mipmap/title_back" />
+
+
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/btn_back"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/dialog_close_left"
+            android:layout_marginTop="@dimen/dialog_close_top"
+            android:id="@+id/dialog_close" />
+
+
+        <FrameLayout
+            android:id="@+id/dialog_button_space"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_sagashi_bottom_buttons_height"
+            android:background="#fbecb1"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/dialog_border_width">
+
+            <LinearLayout
+                android:id="@+id/dialog_button_space"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <jp.co.cybird.android.conanseek.common.BaseButton
+                    android:id="@+id/btn_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dialog_footer_button_div"
+                    android:src="@mipmap/btn_start"/>
+
+                <jp.co.cybird.android.conanseek.common.BaseButton
+                    android:id="@+id/btn_deck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dialog_footer_button_div"
+                    android:src="@mipmap/btn_deckediting"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="@dimen/dialog_sagashi_bottom_buttons_height"
+            android:paddingBottom="@dimen/activity_edge_div">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/space_1_jikenstart"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_header"
+                android:text="1"
+                android:textColor="#000000"
+                android:layout_marginLeft="@dimen/dialog_sagashi_prev_cost_x"
+                android:layout_marginTop="@dimen/dialog_sagashi_prev_cost_y"/>
+
+            <TextView
+                android:id="@+id/time_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_header"
+                android:text="00:00"
+                android:textColor="#000000"
+                android:layout_marginLeft="@dimen/dialog_sagashi_prev_time_x"
+                android:layout_marginTop="@dimen/dialog_sagashi_prev_time_y"/>
+
+
+            <TextView
+                android:id="@+id/target_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_header"
+                android:text="9"
+                android:textColor="#000000"
+                android:layout_marginLeft="@dimen/dialog_sagashi_prev_target_x"
+                android:layout_marginTop="@dimen/dialog_sagashi_prev_target_y"/>
+
+            <TextView
+                android:id="@+id/skill_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_header"
+                android:text="9"
+                android:textColor="#000000"
+                android:layout_marginLeft="@dimen/dialog_sagashi_prev_skill_x"
+                android:layout_marginTop="@dimen/dialog_sagashi_prev_skill_y"/>
+
+            <ImageView
+                android:id="@+id/skill_color"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/skill_color_icon"
+                android:layout_marginTop="@dimen/dialog_sagashi_prev_skills_y"
+                android:layout_marginLeft="@dimen/dialog_sagashi_prev_skill_col_x"/>
+
+            <ImageView
+                android:id="@+id/skill_direction"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/skill_direction_icon"
+                android:layout_marginTop="@dimen/dialog_sagashi_prev_skills_y"
+                android:layout_marginLeft="@dimen/dialog_sagashi_prev_skill_dir_x"/>
+
+            <ImageView
+                android:id="@+id/skill_order"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/skill_order_icon"
+                android:layout_marginTop="@dimen/dialog_sagashi_prev_skills_y"
+                android:layout_marginLeft="@dimen/dialog_sagashi_prev_skill_ord_x"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dialog_sagashi_prev_thumb_x"
+                android:layout_marginLeft="@dimen/dialog_sagashi_prev_thumb_y"
+                android:padding="@dimen/dialog_sagashi_prev_thumb_padding"
+                android:background="#000000">
+                <ImageView
+                    android:id="@+id/thumb_mini"
+                    android:layout_width="@dimen/dialog_sagashi_prev_thumb_width"
+                    android:layout_height="@dimen/dialog_sagashi_prev_thumb_height"/>
+            </FrameLayout>
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="@dimen/dialog_sagashi_prev_viewpager_width"
+                android:layout_height="@dimen/dialog_sagashi_prev_viewpager_height"
+                android:layout_marginLeft="@dimen/dialog_sagashi_prev_viewpager_x"
+                android:layout_marginTop="@dimen/dialog_sagashi_prev_viewpager_y">
+            </android.support.v4.view.ViewPager>
+
+            <TextView
+                android:id="@+id/pagecontrol"
+                android:layout_width="@dimen/dialog_sagashi_prev_viewpager_width"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_header"
+                android:layout_marginLeft="@dimen/dialog_sagashi_prev_viewpager_x"
+                android:layout_marginTop="160dp"
+                android:gravity="center"
+                android:text="00"/>
+
+            <jp.co.cybird.android.conanseek.common.ArrowButton
+                android:id="@+id/arrowLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="90dp"
+                android:background="@null"
+                android:src="@mipmap/arrow_left" />
+
+            <jp.co.cybird.android.conanseek.common.ArrowButton
+                android:id="@+id/arrowRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="440dp"
+                android:layout_marginTop="90dp"
+                android:background="@null"
+                android:src="@mipmap/arrow_right" />
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+</FrameLayout>

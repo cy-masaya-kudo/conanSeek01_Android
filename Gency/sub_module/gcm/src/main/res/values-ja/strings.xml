@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- GencyGCM設定画面に関して -->
+    <string name="LIB_GCM_DIALOG_AGREE">ＯＫ</string>
+    <string name="LIB_GCM_DIALOG_DECLINE">許可しない</string>
+    <string name="LIB_GCM_DIALOG_TITLE">プッシュ通知について</string>
+    <string name="LIB_GCM_GOOGLE_ACCOUNT_MISSING_INFO">有効なGoogleアカウントを設定してください</string>
+    <string name="LIB_GCM_PREF_CATEGORY1_TITLE">通知</string>
+    <string name="LIB_GCM_PREF_CATEGORY2_TITLE">詳細</string>
+    <string name="LIB_GCM_PREF_CATEGORY3_TITLE">開発</string>
+    <string name="LIB_GCM_PREF_KEY_DOES_INCLUDE_SANDBOX">lib_gcm_does_include_sandbox</string>
+    <string name="LIB_GCM_PREF_KEY_DOES_INCLUDE_SANDBOX_SUMMARY_FALSE">url="https://push.example.com/XXXX"</string>
+    <string name="LIB_GCM_PREF_KEY_DOES_INCLUDE_SANDBOX_SUMMARY_TURE">url="https://sandbox.push.example.com/XXXX"</string>
+    <string name="LIB_GCM_PREF_KEY_DOES_INCLUDE_SANDBOX_TITLE">urlの中に、sandboxを追加する</string>
+    <string name="LIB_GCM_PREF_KEY_IS_NORMAL">lib_gcm_is_normal</string>
+    <string name="LIB_GCM_PREF_KEY_IS_NORMAL_SUMMARY_FALSE">act変数を無効にする</string>
+    <string name="LIB_GCM_PREF_KEY_IS_NORMAL_SUMMARY_TURE">act変数を有効にする</string>
+    <string name="LIB_GCM_PREF_KEY_IS_NORMAL_TITLE">act変数有効</string>
+    <string name="LIB_GCM_PREF_KEY_IS_TESTING">lib_gcm_is_testing</string>
+    <string name="LIB_GCM_PREF_KEY_IS_TESTING_SUMMARY_FALSE">test=0</string>
+    <string name="LIB_GCM_PREF_KEY_IS_TESTING_SUMMARY_TURE">test=1</string>
+    <string name="LIB_GCM_PREF_KEY_IS_TESTING_TITLE">テスト中</string>
+    <string name="LIB_GCM_PREF_KEY_WILLPLAYSOUND">lib_gcm_willPlaySound</string>
+    <string name="LIB_GCM_PREF_KEY_WILLPLAYSOUND_SUMMARY">通知時に通知音でお知らせする</string>
+    <string name="LIB_GCM_PREF_KEY_WILLPLAYSOUND_TITLE">通知音</string>
+    <string name="LIB_GCM_PREF_KEY_WILLSENDNOTIFICATION">lib_gcm_willSendNotification</string>
+    <string name="LIB_GCM_PREF_KEY_WILLSENDNOTIFICATION_TITLE">通知を受け取る</string>
+    <string name="LIB_GCM_PREF_KEY_WILLVIBRATE">lib_gcm_willVibrate</string>
+    <string name="LIB_GCM_PREF_KEY_WILLVIBRATE_SUMMARY">通知時にバイブレーションでお知らせする</string>
+    <string name="LIB_GCM_PREF_KEY_WILLVIBRATE_TITLE">バイブレーション</string>
+
+    <string name="LIB_GCM_DIALOG_WARNING_TITLE">注意</string>
+    <string name="LIB_GCM_DIALOG_WARNING_BODY">もし「Google Play開発者サービス」がインストールされてないと、通知が使えません。\n\nインストールしますか？ </string>
+    <string name="LIB_GCM_DIALOG_WARNING_INSTALL">インストールする</string>
+    <string name="LIB_GCM_DIALOG_WARNING_REJECT">今後表示しない</string>
+    <string name="LIB_GCM_DIALOG_WARNING_PENDING">後で</string>
+
+    <bool name="LIB_GCM_IS_UNITY">false</bool>
+</resources>

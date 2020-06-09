@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/wrapper">
+
+
+    <FrameLayout
+        android:id="@+id/wrapper_inner"
+        android:layout_width="@dimen/dialog_normal_size_width"
+        android:layout_height="@dimen/dialog_normal_size_height"
+        android:layout_gravity="center">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/wrapper">
+
+
+            <FrameLayout
+                android:id="@+id/wrapper_inner"
+                android:layout_width="@dimen/dialog_normal_size_width"
+                android:layout_height="@dimen/dialog_normal_size_height"
+                android:layout_gravity="center">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dialog_border_width"
+                    android:background="#000000"/>
+
+                <ImageView
+                    android:id="@+id/image_dialog_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dialog_border_width"
+                    android:alpha="0.3"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:id="@+id/dialog_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:paddingLeft="110dp"
+                    android:layout_marginTop="@dimen/dialog_normal_margin"
+                    android:src="@mipmap/title_back" />
+                <TextView
+                    android:id="@+id/dialog_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dialog_title_height"
+                    android:layout_gravity="center|top"
+                    android:paddingLeft="110dp"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dialog_normal_margin"
+                    android:text="旧公家屋敷の日本間Lv.3"
+                    android:textColor="#ffd740"
+                    android:textSize="@dimen/text_size_header"
+                    android:src="@mipmap/title_back" />
+
+                <FrameLayout
+                    android:layout_width="340dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@mipmap/finish_bg">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center_horizontal">
+
+                        <FrameLayout
+                            android:id="@+id/suiri_block_hito"
+                            android:layout_width="72dp"
+                            android:layout_height="90dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp">
+                            <ImageView
+                                android:id="@+id/title_hito"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@mipmap/title_suspect_blue"/>
+                            <ImageView
+                                android:id="@+id/komado_hito"
+                                android:layout_width="72dp"
+                                android:layout_height="72dp"
+                                android:background="#ffffff"
+                                android:layout_gravity="center|bottom"/>
+                        </FrameLayout>
+                        <ImageView
+                            android:id="@+id/suiri_arrow_hito"
+                            android:layout_width="12dp"
+                            android:layout_height="15dp"
+                            android:layout_marginTop="46dp"
+                            android:src="@mipmap/arrow_blue"/>
+
+
+                        <FrameLayout
+                            android:id="@+id/suiri_block_koto"
+                            android:layout_width="108dp"
+                            android:layout_height="90dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@mipmap/title_motivation_blue"/>
+                            <TextView
+                                android:id="@+id/label_koto"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="28dp"
+                                android:padding="5dp"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/text_size_min"
+                                android:text="あいうえおうさんこー"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/corner_radius_shougen"/>
+                        </FrameLayout>
+                        <ImageView
+                            android:id="@+id/suiri_arrow_koto"
+                            android:layout_width="12dp"
+                            android:layout_height="15dp"
+                            android:layout_marginTop="46dp"
+                            android:src="@mipmap/arrow_blue"/>
+
+                        <FrameLayout
+                            android:id="@+id/suiri_block_mono"
+                            android:layout_width="72dp"
+                            android:layout_height="90dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@mipmap/title_evidence_blue"/>
+                            <ImageView
+                                android:id="@+id/komado_mono"
+                                android:layout_width="72dp"
+                                android:layout_height="72dp"
+                                android:background="#ffffff"
+                                android:layout_gravity="center|bottom"/>
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="300dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="124dp">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/ribbon_reward_2"/>
+                            <ImageView
+                                android:id="@+id/reward_icon"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="68dp" />
+                            <TextView
+                                android:id="@+id/reward_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_header"
+                                android:textColor="#ffffff"
+                                android:gravity="center"
+                                android:layout_marginLeft="98dp"
+                                android:layout_gravity="center_vertical"
+                                android:text="ガチャチケットx1"/>
+                        </FrameLayout>
+
+                        <ImageView
+                            android:id="@+id/content_lose"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/mark_caution_mistake"
+                            android:scaleType="fitCenter"
+                            android:background="#ffffff"/>
+
+                    </FrameLayout>
+
+                    <jp.co.cybird.android.conanseek.common.BaseButton
+                        android:id="@+id/btn_ending"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:src="@mipmap/btn_ending"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginBottom="@dimen/activity_edge_div"
+                        android:layout_marginTop="140dp"/>
+
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/result_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/text_clear_1"
+                    android:layout_marginTop="@dimen/dialog_normal_margin"
+                    android:layout_marginLeft="@dimen/dialog_normal_content_div"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:background="#70231200"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/dialog_normal_content_div">
+                    <TextView
+                        android:id="@+id/iraisha_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dialog_normal_margin"
+                        android:gravity="center"
+                        android:textColor="#ffd740"
+                        android:text="12312"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="4dp"
+                        android:layout_toLeftOf="@+id/iraisha_text"
+                        android:src="@mipmap/irai_arrow"/>
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/tachie_image"
+                    android:layout_width="300dp"
+                    android:layout_height="280dp"
+                    android:layout_marginLeft="-70dp"
+                    android:layout_gravity="bottom"/>
+
+            </FrameLayout>
+
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/text_corner_radius"/>
+
+
+    </FrameLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <jp.co.cybird.android.conanseek.common.BaseButton
+        android:id="@+id/cell_egara"
+        android:layout_width="50dp"
+        android:layout_height="68dp"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/card_bg_small" />
+
+    <ImageView
+        android:id="@+id/cell_skill"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="6dp"
+        android:visibility="gone"
+        android:src="@mipmap/skill_color" />
+
+    <ImageView
+        android:id="@+id/cell_frame"
+        android:layout_width="60dp"
+        android:layout_height="84dp"
+        android:visibility="invisible"
+        android:src="@mipmap/cardframe" />
+
+</FrameLayout>

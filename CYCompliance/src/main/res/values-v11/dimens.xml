@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="dialog_spinner_width_month">100dp</dimen>
+</resources>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/wrapper">
+
+
+    <FrameLayout
+        android:id="@+id/wrapper_inner"
+        android:layout_width="@dimen/dialog_normal_size_width"
+        android:layout_height="@dimen/dialog_normal_size_height"
+        android:layout_gravity="center">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dialog_border_width"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/image_dialog_bg"
+            android:layout_width="@dimen/background_dialog_width"
+            android:layout_height="@dimen/background_dialog_height"
+            android:layout_margin="@dimen/dialog_border_width"
+            android:alpha="0.3"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:paddingLeft="110dp"
+            android:layout_marginTop="@dimen/dialog_normal_margin"
+            android:src="@mipmap/title_back" />
+        <TextView
+            android:id="@+id/dialog_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dialog_title_height"
+            android:layout_gravity="center|top"
+            android:paddingLeft="110dp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dialog_normal_margin"
+            android:text="旧公家屋敷の日本間Lv.3"
+            android:textColor="#ffd740"
+            android:textSize="@dimen/text_size_normal"
+            android:src="@mipmap/title_back" />
+
+        <FrameLayout
+            android:layout_width="204dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center|top"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="66dp"
+            android:padding="1dp"
+            android:background="#000000">
+            <ImageView
+                android:id="@+id/thumb_mini"
+                android:layout_width="@dimen/thumb_info_width"
+                android:layout_height="@dimen/thumb_info_height"/>
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:background="#70231200"
+            android:layout_marginTop="200dp">
+            <TextView
+                android:id="@+id/iraisha_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dialog_normal_margin"
+                android:gravity="center"
+                android:textColor="#ffd740"
+                android:text="12312"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_toLeftOf="@+id/iraisha_text"
+                android:src="@mipmap/irai_arrow"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="66dp"
+            android:layout_marginRight="@dimen/dialog_normal_margin"
+            android:orientation="vertical">
+
+            <jp.co.cybird.android.conanseek.common.BaseButton
+                android:id="@+id/btn_shougen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/btn_shougen"/>
+            <TextView
+                android:id="@+id/text_shougen"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#80000000"
+                android:textSize="@dimen/text_size_header"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:text="11/22"
+                android:layout_marginBottom="@dimen/dialog_level_cell_div"/>
+
+            <jp.co.cybird.android.conanseek.common.BaseButton
+                android:id="@+id/btn_angou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/btn_cipher"/>
+            <TextView
+                android:id="@+id/text_angou"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#80000000"
+                android:textSize="@dimen/text_size_header"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:text="11/22"
+                android:layout_marginBottom="@dimen/dialog_level_cell_div"/>
+
+            <jp.co.cybird.android.conanseek.common.BaseButton
+                android:id="@+id/btn_busshou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/btn_evidence"/>
+            <TextView
+                android:id="@+id/text_busshou"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#80000000"
+                android:textSize="@dimen/text_size_header"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:text="11/22"
+                android:layout_marginBottom="@dimen/dialog_level_cell_div"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/tachie_image"
+            android:layout_width="300dp"
+            android:layout_height="240dp"
+            android:layout_marginLeft="-15dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/dialog_sagashi_bottom_buttons_height"/>
+
+        <FrameLayout
+            android:id="@+id/dialog_button_space"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_sagashi_bottom_buttons_height"
+            android:background="#fbecb1"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/dialog_border_width">
+
+            <LinearLayout
+                android:id="@+id/dialog_button_space"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/btn_story_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:id="@+id/btn_story_frame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/frame_incident" />
+                    <jp.co.cybird.android.conanseek.common.BaseButton
+                        android:id="@+id/btn_story"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:layout_gravity="center"
+                        android:src="@drawable/btn_jiken_story"/>
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/activity_edge_div"
+                    android:layout_marginLeft="@dimen/activity_edge_div"
+                    android:src="@mipmap/arrow_incident"/>
+
+                <FrameLayout
+                    android:id="@+id/btn_sousa_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:id="@+id/btn_sousa_frame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/frame_incident"/>
+                    <jp.co.cybird.android.conanseek.common.BaseButton
+                        android:id="@+id/btn_sousa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:layout_gravity="center"
+                        android:src="@drawable/btn_jiken_sousa"/>
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/jiken_arrow_kikikomi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/activity_edge_div"
+                    android:layout_marginLeft="@dimen/activity_edge_div"
+                    android:src="@mipmap/arrow_incident"/>
+
+                <FrameLayout
+                    android:id="@+id/btn_kikikomi_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:id="@+id/btn_kikikomi_frame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/frame_incident"/>
+                    <jp.co.cybird.android.conanseek.common.BaseButton
+                        android:id="@+id/btn_kikikomi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:layout_gravity="center"
+                        android:src="@drawable/btn_jiken_kikikomi"/>
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/jiken_arrow_suiri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/activity_edge_div"
+                    android:layout_marginLeft="@dimen/activity_edge_div"
+                    android:src="@mipmap/arrow_incident"/>
+
+                <FrameLayout
+                    android:id="@+id/btn_suiri_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:id="@+id/btn_suiri_frame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/frame_incident"/>
+                    <jp.co.cybird.android.conanseek.common.BaseButton
+                        android:id="@+id/btn_suiri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:layout_gravity="center"
+                        android:src="@drawable/btn_jiken_suiri"/>
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <item android:state_enabled="false"
+        android:drawable="@mipmap/map_button_no" />
+
+    <item android:state_selected="true"
+        android:drawable="@mipmap/map_button_checked" />
+
+    <item android:state_enabled="true" android:state_selected="false"
+        android:drawable="@mipmap/map_button_yes" />
+
+</selector>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dialog_normal_content_div"
+        android:layout_marginTop="@dimen/dialog_normal_content_div"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <include
+            android:id="@+id/mission_cell_1"
+            layout="@layout/table_cell_missionlist" />
+        <include
+            android:id="@+id/mission_cell_2"
+            layout="@layout/table_cell_missionlist" />
+        <include
+            android:id="@+id/mission_cell_3"
+            layout="@layout/table_cell_missionlist" />
+        <include
+            android:id="@+id/mission_cell_4"
+            layout="@layout/table_cell_missionlist" />
+
+    </LinearLayout>
+
+</FrameLayout>

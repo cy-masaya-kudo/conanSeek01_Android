@@ -1,0 +1,26 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/wrapper_width"
+    android:layout_height="@dimen/headermenu_regular_height"
+    android:background="@mipmap/status_background_top"
+    tools:context="jp.co.cybird.android.conanseek.activity.top.HeaderMenuFragment">
+
+    <include
+        layout="@layout/fragment_header_menu_status"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headermenu_status_height"
+        android:layout_marginTop="@dimen/headermenu_padding_top"/>
+
+    <jp.co.cybird.android.conanseek.common.BaseButton
+        android:id="@+id/header_status_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/headermenu_status_ext_top"
+        android:background="@null"
+        android:src="@mipmap/btn_top" />
+
+
+</FrameLayout>

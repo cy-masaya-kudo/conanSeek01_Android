@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="560dp"
+    android:layout_height="310dp">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_height"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/title_card"/>
+
+
+    <ImageView
+        android:layout_width="@dimen/activity_content_menu_width"
+        android:layout_height="260dp"
+        android:baselineAlignBottom="true"
+        android:scaleType="fitCenter"
+        android:layout_gravity="bottom"
+        android:src="@mipmap/card_conan" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/activity_content_menu_width"
+        android:layout_height="260dp"
+        android:layout_gravity="bottom|right"
+        android:paddingTop="@dimen/activity_content_menu_buttons_padding"
+        android:paddingBottom="@dimen/activity_content_menu_buttons_padding">
+
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:layout_width="@dimen/activity_content_menu_button_width"
+            android:layout_height="@dimen/activity_content_menu_button_height"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/btn_edit_2"
+            android:id="@+id/btn_card_deck"
+            android:background="@null"/>
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:layout_width="@dimen/activity_content_menu_button_width"
+            android:layout_height="@dimen/activity_content_menu_button_height"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/btn_possession_2"
+            android:id="@+id/btn_card_shoji"
+            android:layout_centerVertical="true"
+            android:background="@null"/>
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:layout_width="@dimen/activity_content_menu_button_width"
+            android:layout_height="@dimen/activity_content_menu_button_height"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/btn_picturebook_2"
+            android:id="@+id/btn_card_zukan"
+            android:layout_alignParentBottom="true"
+            android:background="@null"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dialog_shutsugen_meter_height">
+
+    <TextView
+        android:id="@+id/shutsugen_bar_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_shutsugen_meter_title_height"
+        android:textSize="@dimen/text_size_header"
+        android:textColor="#000000"
+        android:text="[SSR]カード" />
+    <TextView
+        android:id="@+id/shutsugen_bar_rate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_shutsugen_meter_title_height"
+        android:gravity="right"
+        android:textSize="@dimen/text_size_header"
+        android:textColor="#000000"
+        android:text="0/3" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_shutsugen_meter_image_height"
+        android:layout_marginTop="@dimen/dialog_shutsugen_meter_title_height"
+        android:padding="@dimen/dialog_shutsugen_meter_image_padding"
+        android:background="@mipmap/gacha_meter">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+        <View
+            android:id="@+id/shutsugen_bar_meter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/gacha_meter"
+            android:background="#178ada"/>
+    </FrameLayout>
+
+</FrameLayout>

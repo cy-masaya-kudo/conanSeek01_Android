@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="560dp"
+    android:layout_height="310dp">
+
+
+    <ImageView
+        android:id="@+id/card_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_height"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/title_picturebook"/>
+
+
+    <jp.co.cybird.android.conanseek.common.BaseButton
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/btn_back_2"
+        android:background="@null"
+        android:id="@+id/card_back" />
+
+
+    <FrameLayout
+        android:layout_width="@dimen/frame_card_cardlist_container_width"
+        android:layout_height="@dimen/frame_card_cardlist_container_height"
+        android:layout_marginBottom="6dp"
+        android:layout_gravity="center|bottom"
+        android:background="@mipmap/card_fragment_bg">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/frame_card_cardlist_container_zukan_height"
+            android:layout_margin="@dimen/dialog_normal_border_width">
+        </android.support.v4.view.ViewPager>
+
+        <jp.co.cybird.android.conanseek.common.ArrowButton
+            android:id="@+id/arrowLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:src="@mipmap/arrow_left_large"/>
+
+        <jp.co.cybird.android.conanseek.common.ArrowButton
+            android:id="@+id/arrowRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:src="@mipmap/arrow_right_large"/>
+
+    </FrameLayout>
+
+</FrameLayout>

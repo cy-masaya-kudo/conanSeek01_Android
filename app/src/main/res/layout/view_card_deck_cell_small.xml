@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="@dimen/frame_card_deck_small_waku_width"
+        android:layout_height="@dimen/frame_card_deck_small_waku_height"
+        android:layout_gravity="center|top">
+
+        <ImageView
+            android:id="@+id/cell_egara"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/card_bg_small"/>
+
+        <ImageView
+            android:id="@+id/cell_skill"
+            android:src="@mipmap/skill_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:scaleType="fitCenter"/>
+
+    </FrameLayout>
+
+</FrameLayout>

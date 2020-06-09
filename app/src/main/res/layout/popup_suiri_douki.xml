@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/wrapper">
+
+
+    <FrameLayout
+        android:id="@+id/wrapper_inner"
+        android:layout_width="@dimen/dialog_normal_size_width"
+        android:layout_height="@dimen/dialog_normal_size_height"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dialog_border_width"
+            android:background="#000000"
+            android:src="@mipmap/popup_background_blue"
+            android:scaleType="fitXY"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/text_corner_radius"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dialog_normal_margin"
+            android:layout_gravity="center|top"
+            android:src="@mipmap/title_motivation" />
+
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/btn_back"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/dialog_close_left"
+            android:layout_marginTop="@dimen/dialog_close_top"
+            android:id="@+id/dialog_close" />
+
+        <FrameLayout
+            android:layout_width="420dp"
+            android:layout_height="180dp"
+            android:background="#50000000"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/douki_button1"
+                    android:layout_width="320dp"
+                    android:layout_height="36dp"
+                    android:text="動機"
+                    android:background="@drawable/corner_suiri_not_selected"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="#000000"/>
+
+                <Button
+                    android:id="@+id/douki_button2"
+                    android:layout_width="320dp"
+                    android:layout_height="36dp"
+                    android:text="動機"
+                    android:background="@drawable/corner_suiri_not_selected"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="#000000"/>
+
+                <Button
+                    android:id="@+id/douki_button3"
+                    android:layout_width="320dp"
+                    android:layout_height="36dp"
+                    android:text="動機"
+                    android:background="@drawable/corner_suiri_not_selected"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_regular"
+            android:text="どの動機を選びますか？"
+            android:layout_marginBottom="70dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dialog_normal_content_div"
+            android:layout_gravity="center|bottom">
+
+            <jp.co.cybird.android.conanseek.common.BaseButton
+                android:id="@+id/btn_shougen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginRight="@dimen/dialog_footer_button_div"
+                android:src="@mipmap/btn_testimony"/>
+
+            <jp.co.cybird.android.conanseek.common.BaseButton
+                android:id="@+id/btn_prev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginRight="@dimen/dialog_footer_button_div"
+                android:src="@mipmap/btn_return"/>
+
+            <jp.co.cybird.android.conanseek.common.BaseButton
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/btn_next"/>
+
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
+
+
+</FrameLayout>

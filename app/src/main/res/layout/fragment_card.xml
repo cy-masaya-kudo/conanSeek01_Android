@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/fragment_wrapper"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/wrapper_width"
+        android:layout_height="@dimen/wrapper_height"
+        android:background="@mipmap/top_background">
+
+        <fragment
+            android:id="@+id/headerMenu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/headermenu_regular_height"
+            android:name="jp.co.cybird.android.conanseek.activity.top.HeaderMenuFragment"
+            tools:layout="@layout/fragment_header_menu_regular" />
+
+        <fragment
+            android:id="@+id/topLeftMenu"
+            android:layout_width="@dimen/leftmenu_width"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/headermenu_bottom_margin"
+            android:name="jp.co.cybird.android.conanseek.activity.top.LeftMenuFragment"
+            tools:layout="@layout/fragment_left_menu" />
+
+
+        <FrameLayout
+            android:id="@+id/card_content_frame"
+            android:layout_width="560dp"
+            android:layout_height="310dp"
+            android:layout_toRightOf="@+id/topLeftMenu"
+            android:layout_alignParentBottom="true">
+        </FrameLayout>
+
+        <FrameLayout android:id="@+id/popup_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:id="@+id/tutorial_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:id="@+id/effect_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

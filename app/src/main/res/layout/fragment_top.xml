@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/fragment_wrapper"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/wrapper_width"
+        android:layout_height="@dimen/wrapper_height"
+        android:background="@mipmap/top_background_base">
+
+        <FrameLayout
+            android:layout_width="500dp"
+            android:layout_height="81dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="400dp"
+                android:layout_height="81dp"
+                android:clipToPadding="false"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp">
+            </android.support.v4.view.ViewPager>
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/top_background_cover"/>
+
+
+        <fragment
+            android:id="@+id/headerMenu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/headermenu_top_height"
+            android:name="jp.co.cybird.android.conanseek.activity.top.HeaderMenuFragment"
+            tools:layout="@layout/fragment_header_menu_top" />
+
+        <fragment
+            android:id="@+id/topLeftMenu"
+            android:layout_width="@dimen/leftmenu_width"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/headermenu_bottom_margin"
+            android:name="jp.co.cybird.android.conanseek.activity.top.LeftMenuFragment"
+            tools:layout="@layout/fragment_left_menu" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dialog_normal_content_div"
+            android:layout_marginTop="@dimen/headermenu_status_ext_top"
+            android:layout_toRightOf="@+id/topLeftMenu">
+            <FrameLayout
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/waku_top"/>
+                <ImageView
+                    android:id="@+id/top_deck_1"
+                    android:layout_width="140dp"
+                    android:layout_height="198dp"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/waku_top"/>
+                <ImageView
+                    android:id="@+id/top_deck_2"
+                    android:layout_width="140dp"
+                    android:layout_height="198dp"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/waku_top"/>
+                <ImageView
+                    android:id="@+id/top_deck_3"
+                    android:layout_width="140dp"
+                    android:layout_height="198dp"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <FrameLayout android:id="@+id/popup_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:id="@+id/tutorial_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:id="@+id/effect_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

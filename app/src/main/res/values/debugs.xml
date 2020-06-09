@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="debug_labels">
+        <item>図鑑全表示</item>
+        <item>事件全開放</item>
+        <item>訓練全開放</item>
+        <item>聞き込み無条件開放</item>
+        <item>聞き込み履歴全削除</item>
+        <item>本日TOP初回表示履歴削除</item>
+        <item>通貨操作：コイン</item>
+        <item>通貨操作：チケット</item>
+        <item>通貨操作：ハート</item>
+        <item>通貨操作：メガネ</item>
+        <item>初回会話（スプラッシュ）</item>
+        <item>強制スプラッシュ戻り</item>
+        <item>再ダウンロード発生</item>
+        <item>チュートリアル：card</item>
+        <item>チュートリアル：kunren</item>
+        <item>チュートリアル：jiken_1</item>
+        <item>チュートリアル：jiken_2</item>
+        <item>チュートリアル：jiken_3</item>
+        <item>チュートリアル：jiken_4</item>
+        <item>チュートリアル：jiken_5</item>
+        <item>チュートリアル：jiken_6</item>
+        <item>チュートリアル：jiken_7</item>
+        <item>チュートリアル：jiken_sousa</item>
+        <item>チュートリアル：jiken_8</item>
+        <item>チュートリアル：gacha_1</item>
+        <item>チュートリアル：gacha_2</item>
+        <item>チュートリアル：gacha_3</item>
+        <item>チュートリアル：shop</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/wrapper">
+
+    <RelativeLayout
+        android:id="@+id/wrapper_inner"
+        android:layout_width="@dimen/dialog_normal_size_width"
+        android:layout_height="@dimen/dialog_normal_size_height"
+        android:layout_gravity="center"
+        android:background="@mipmap/popup_background">
+
+        <ImageView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dialog_normal_margin"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/title_shop" />
+
+
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/btn_back"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/dialog_close_left"
+            android:layout_marginTop="@dimen/dialog_close_top"
+            android:id="@+id/dialog_close" />
+
+        <FrameLayout
+            android:layout_width="460dp"
+            android:layout_height="240dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dp">
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+
+            </ListView>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,128 @@
+<jp.co.cybird.android.utils.CustomRelativeLayout
+	android:id="@+id/layout_base"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:id="@+id/action_area"
+		android:layout_width="wrap_content"
+		android:layout_height="@dimen/dialog_action_area"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="@dimen/dialog_padding_around_button"
+		android:orientation="horizontal"
+		android:visibility="gone">
+
+		<Button
+			android:id="@+id/dialog_negative_button"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/dialog_button_height"
+			android:layout_marginRight="@dimen/dialog_padding_around_button"
+			android:text="@string/age_conf_cancel"/>
+
+		<Button
+			android:id="@+id/dialog_positive_button"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/dialog_button_height"
+			android:text="@string/age_regist_registration"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/linearlayout_base"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@+id/action_area"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			>
+
+			<TextView
+				android:id="@+id/age_regist_text2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:text="@string/age_regist_text2"
+				android:textSize="@dimen/dialog_default_text_size"/>
+
+			<TextView
+				android:id="@+id/age_regist_text3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:text="@string/age_regist_text3"
+				android:textColor="#ff0000"
+				android:textSize="@dimen/dialog_default_text_size"
+				/>
+		</LinearLayout>
+
+		<TableLayout
+			android:id="@+id/arg_regist_table_layout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginBottom="@dimen/dialog_padding_around_content_area2"
+			android:layout_marginTop="@dimen/dialog_padding_around_content_area2">
+
+			<TableRow>
+
+				<TextView
+					android:id="@+id/age_regist_birth_year_month_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:text="@string/age_regist_birth_year_month_text"
+					android:textSize="@dimen/dialog_large_text_size"/>
+
+				<TextView
+					android:id="@+id/age_regist_birth_year_month"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:textSize="@dimen/dialog_large_text_size"/>
+
+				<TextView
+					android:id="@+id/age_regist_age_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:text="@string/age_regist_age_text"
+					android:textSize="@dimen/dialog_large_text_size"/>
+
+				<TextView
+					android:id="@+id/age_regist_age"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:textSize="@dimen/dialog_large_text_size"/>
+			</TableRow>
+
+		</TableLayout>
+
+		<TextView
+			android:id="@+id/age_regist_text4"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginBottom="@dimen/dialog_padding_bet_title_body"
+			android:layout_marginTop="5dp"
+			android:text="@string/age_regist_text4"/>
+
+		<TextView
+			android:id="@+id/age_regist_text_error"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal|center_vertical"
+			android:layout_marginBottom="@dimen/dialog_padding_around_content_area"
+			android:layout_marginTop="@dimen/dialog_padding_around_button"
+			android:text="@string/age_conf_error02"
+			android:textColor="#ff0000"
+			android:textSize="@dimen/dialog_default_text_size"
+			android:visibility="invisible"/>
+	</LinearLayout>
+
+</jp.co.cybird.android.utils.CustomRelativeLayout>

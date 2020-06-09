@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/wrapper">
+
+    <FrameLayout
+        android:id="@+id/wrapper_inner"
+        android:layout_width="@dimen/dialog_normal_size_width"
+        android:layout_height="@dimen/dialog_normal_size_height"
+        android:layout_gravity="center"
+        android:background="@mipmap/popup_background">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="@dimen/dialog_normal_margin"
+            android:src="@mipmap/title_loginbonus" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="55dp"
+            android:layout_gravity="center">
+            <include
+                android:id="@+id/list_cell_0"
+                android:layout_width="88dp"
+                android:layout_height="90dp"
+                layout="@layout/table_cell_loginbonus"/>
+            <include
+                android:id="@+id/list_cell_1"
+                android:layout_width="88dp"
+                android:layout_height="90dp"
+                layout="@layout/table_cell_loginbonus"/>
+            <include
+                android:id="@+id/list_cell_2"
+                android:layout_width="88dp"
+                android:layout_height="90dp"
+                layout="@layout/table_cell_loginbonus"/>
+            <include
+                android:id="@+id/list_cell_3"
+                android:layout_width="88dp"
+                android:layout_height="90dp"
+                layout="@layout/table_cell_loginbonus"/>
+            <include
+                android:id="@+id/list_cell_4"
+                android:layout_width="88dp"
+                android:layout_height="90dp"
+                layout="@layout/table_cell_loginbonus"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center">
+            <include
+                android:id="@+id/list_cell_5"
+                android:layout_width="88dp"
+                android:layout_height="90dp"
+                layout="@layout/table_cell_loginbonus"/>
+            <include
+                android:id="@+id/list_cell_6"
+                android:layout_width="88dp"
+                android:layout_height="90dp"
+                layout="@layout/table_cell_loginbonus"/>
+            <include
+                android:id="@+id/list_cell_7"
+                android:layout_width="88dp"
+                android:layout_height="90dp"
+                layout="@layout/table_cell_loginbonus"/>
+            <include
+                android:id="@+id/list_cell_8"
+                android:layout_width="88dp"
+                android:layout_height="90dp"
+                layout="@layout/table_cell_loginbonus"/>
+            <include
+                android:id="@+id/list_cell_9"
+                android:layout_width="88dp"
+                android:layout_height="90dp"
+                layout="@layout/table_cell_loginbonus"/>
+        </LinearLayout>
+
+
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:id="@+id/btn_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_margin="@dimen/dialog_normal_margin"
+            android:background="@null"
+            android:src="@mipmap/btn_ok" />
+
+
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/wrapper">
+
+    <RelativeLayout
+        android:id="@+id/wrapper_inner"
+        android:layout_width="@dimen/dialog_normal_size_width"
+        android:layout_height="@dimen/dialog_normal_size_height"
+        android:layout_gravity="center"
+        android:background="@mipmap/popup_background">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dialog_normal_margin"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/title_megane_kaifuku" />
+
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/btn_back"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/dialog_close_left"
+            android:layout_marginTop="@dimen/dialog_close_top"
+            android:id="@+id/dialog_close" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:paddingTop="@dimen/dialog_normal_content_div">
+
+            <jp.co.cybird.android.conanseek.common.BaseButton
+                android:id="@+id/btn_dialog_megane_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/btn_shop_megane_5"
+                android:scaleType="fitCenter"
+                android:layout_marginRight="@dimen/dialog_normal_content_div"
+                android:background="@null"/>
+
+            <jp.co.cybird.android.conanseek.common.BaseButton
+                android:id="@+id/btn_dialog_megane_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/btn_shop_megane_30"
+                android:scaleType="fitCenter"
+                android:layout_marginRight="@dimen/dialog_normal_content_div"
+                android:background="@null"/>
+
+            <jp.co.cybird.android.conanseek.common.BaseButton
+                android:id="@+id/btn_dialog_megane_65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/btn_shop_megane_65"
+                android:scaleType="fitCenter"
+                android:background="@null"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

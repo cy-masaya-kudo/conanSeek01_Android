@@ -1,0 +1,91 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/wrapper_inner"
+        android:layout_width="@dimen/dialog_normal_size_width"
+        android:layout_height="@dimen/dialog_normal_size_height"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dialog_border_width"
+            android:background="#000000"
+            android:scaleType="fitXY"
+            android:src="@mipmap/download_bg" />
+
+        <FrameLayout
+            android:id="@+id/nagareru_card"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:id="@+id/card_frame_0"
+                android:layout_width="120dp"
+                android:layout_height="160dp" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/text_corner_radius" />
+
+        <TextView
+            android:id="@+id/download_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="214dp"
+            android:text="データダウンロード中..."
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_normal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="@dimen/dialog_normal_content_div"
+            android:src="@mipmap/title_download" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="通信環境によって時間がかかる場合があります。Wi-Fi環境でのダウンロードをおすすめします。\n※通信環境の良い場所で通信をおこなってください。データが破損する可能性があります。"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_header" />
+
+
+        <FrameLayout
+            android:layout_width="440dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="60dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/bar_bg" />
+
+            <ImageView
+                android:id="@+id/unzip_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_margin="2dp"
+                android:src="@mipmap/bar_meter" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+</FrameLayout>

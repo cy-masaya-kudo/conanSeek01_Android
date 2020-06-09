@@ -1,0 +1,3 @@
+http://repo.sf.intra.cybird.co.jp/svn/SPMCO/branches/jp.co.cybird.android.app.conanseek01_Android/キーストア情報.txt
+
+に情報を載せています。

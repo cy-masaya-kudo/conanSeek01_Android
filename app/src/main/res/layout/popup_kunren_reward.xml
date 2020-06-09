@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/wrapper">
+
+    <RelativeLayout
+        android:id="@+id/wrapper_inner"
+        android:layout_width="@dimen/dialog_caution_size_width"
+        android:layout_height="@dimen/dialog_caution_size_height"
+        android:layout_gravity="center"
+        android:background="@mipmap/popup_background_caution">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/houshuu"
+            android:layout_marginTop="@dimen/dialog_normal_content_div"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/card_face_image"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="50dp"
+            android:layout_width="140dp"
+            android:layout_height="190dp"
+            android:src="@mipmap/card_bg_small"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/reward_card_frame"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/card_number_label"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="message"
+            android:textColor="#ffffff"
+            android:gravity="left|center"
+            android:textSize="@dimen/text_size_header"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="50dp"/>
+
+
+        <TextView
+            android:id="@+id/card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="message"
+            android:textColor="#ffffff"
+            android:gravity="left|center"
+            android:textSize="@dimen/text_size_header"
+            android:layout_marginLeft="224dp"
+            android:layout_marginTop="70dp"/>
+
+        <TextView
+            android:id="@+id/skill_name"
+            android:layout_width="80dp"
+            android:layout_height="18dp"
+            android:text="message"
+            android:textColor="#000000"
+            android:gravity="left|center"
+            android:textSize="@dimen/text_size_header"
+            android:layout_marginLeft="276dp"
+            android:layout_marginTop="100dp"/>
+
+        <TextView
+            android:id="@+id/skill_detail"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="message"
+            android:textColor="#000000"
+            android:gravity="left|top"
+            android:textSize="@dimen/text_size_header"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="126dp"/>
+
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:id="@+id/btn_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="265dp"
+            android:layout_marginTop="200dp"
+            android:src="@mipmap/btn_ok"
+            android:background="@null"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:src="@mipmap/mission_reward_chara1"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:src="@mipmap/mission_reward_chara2"/>
+
+</FrameLayout>

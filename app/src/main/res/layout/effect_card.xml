@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/wrapper">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/anim_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/card_wrapper"
+            android:layout_width="159dp"
+            android:layout_height="225dp"
+            android:layout_gravity="center_horizontal"
+            android:clipChildren="true"
+            android:clipToPadding="true">
+            <ImageView
+                android:id="@+id/card_frame_0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/card_shine"
+                    android:layout_width="100dp"
+                    android:layout_height="500dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#ffffff"/>
+            </FrameLayout>
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+</FrameLayout>

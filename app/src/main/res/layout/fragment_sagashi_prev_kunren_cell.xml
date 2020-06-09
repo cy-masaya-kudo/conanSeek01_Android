@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    tools:context="jp.co.cybird.android.conanseek.activity.sagashi.KakuninPopup">
+
+    <FrameLayout
+        android:layout_width="@dimen/dialog_sagashi_prev_viewpager_width"
+        android:layout_height="@dimen/dialog_sagashi_prev_viewpager_height"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/deck_title_image"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dialog_sagashi_prev_decktitle_height"
+            android:layout_gravity="top|left"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="@dimen/activity_edge_div"
+            android:layout_marginTop="@dimen/dialog_sagashi_prev_thumb_padding"
+            android:src="@mipmap/label_deck_1" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true">
+
+
+            <include
+                layout="@layout/view_card_deck_cell_small"
+                android:id="@+id/list_cell_0"
+                android:layout_width="@dimen/frame_card_deck_small_waku_width"
+                android:layout_height="@dimen/frame_card_deck_small_waku_height"
+                android:layout_marginRight="@dimen/dialog_normal_content_div"/>
+
+            <include
+                layout="@layout/view_card_deck_cell_small"
+                android:id="@+id/list_cell_1"
+                android:layout_width="@dimen/frame_card_deck_small_waku_width"
+                android:layout_height="@dimen/frame_card_deck_small_waku_height"
+                android:layout_marginRight="@dimen/dialog_normal_content_div"/>
+
+            <include
+                layout="@layout/view_card_deck_cell_small"
+                android:id="@+id/list_cell_2"
+                android:layout_width="@dimen/frame_card_deck_small_waku_width"
+                android:layout_height="@dimen/frame_card_deck_small_waku_height"/>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

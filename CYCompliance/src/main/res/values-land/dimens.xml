@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="dialog_padding_around_button">8dp</dimen>
+	<dimen name="dialog_button_height">48dp</dimen>
+	<dimen name="dialog_action_area">52dp</dimen>
+	<dimen name="dialog_padding_bet_title_body">12dp</dimen>
+	<dimen name="dialog_padding_around_content_area">16dp</dimen>
+	<dimen name="dialog_button_min_width">64dp</dimen>
+
+	<dimen name="dialog_default_text_size">15sp</dimen>
+	<dimen name="dialog_min_text_size">12sp</dimen>
+	<dimen name="dialog_large_text_size">18sp</dimen>
+
+	<dimen name="dialog_padding_around_content_area2">6dp</dimen>
+</resources>

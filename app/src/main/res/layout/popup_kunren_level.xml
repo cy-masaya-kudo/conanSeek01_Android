@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/wrapper">
+
+
+    <FrameLayout
+        android:id="@+id/wrapper_inner"
+        android:layout_width="@dimen/dialog_normal_size_width"
+        android:layout_height="@dimen/dialog_normal_size_height"
+        android:layout_gravity="center">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dialog_border_width"
+            android:background="#000000"/>
+        <ImageView
+            android:id="@+id/image_dialog_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dialog_border_width"
+            android:alpha="0.3"
+            android:scaleType="fitXY"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/text_corner_radius"/>
+
+        <ImageView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="@dimen/dialog_normal_margin"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/title_level" />
+
+
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/btn_back"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/dialog_close_left"
+            android:layout_marginTop="@dimen/dialog_close_top"
+            android:id="@+id/dialog_close" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dialog_normal_content_div"
+            android:layout_marginTop="@dimen/dialog_normal_content_div"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/level_cell_1"
+                layout="@layout/view_kunren_level_list"
+                android:layout_width="@dimen/dialog_level_cell_width"
+                android:layout_height="@dimen/dialog_level_cell_height"
+                android:layout_marginTop="@dimen/dialog_normal_content_div" />
+            <include
+                android:id="@+id/level_cell_2"
+                layout="@layout/view_kunren_level_list"
+                android:layout_width="@dimen/dialog_level_cell_width"
+                android:layout_height="@dimen/dialog_level_cell_height"
+                android:layout_marginTop="@dimen/dialog_level_cell_div"/>
+            <include
+                android:id="@+id/level_cell_3"
+                layout="@layout/view_kunren_level_list"
+                android:layout_width="@dimen/dialog_level_cell_width"
+                android:layout_height="@dimen/dialog_level_cell_height"
+                android:layout_marginTop="@dimen/dialog_level_cell_div"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/visual_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"/>
+
+    <jp.co.cybird.android.conanseek.common.BaseButton
+        android:id="@+id/gacha_shutsugen_button"
+        android:src="@mipmap/btn_gacha_shutsugen"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="bottom|right"
+        android:background="@null"
+        android:paddingRight="@dimen/dialog_normal_content_div"
+        android:layout_margin="@dimen/dialog_normal_content_div"/>
+
+    <ImageView
+        android:id="@+id/gacha_ticket_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:src="@mipmap/btn_gacha_kome_desc"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_margin="@dimen/dialog_normal_content_div">
+
+        <LinearLayout
+            android:id="@+id/gacha_fire_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <jp.co.cybird.android.conanseek.common.BaseButton
+                android:id="@+id/gacha_fire_one_button"
+                android:src="@mipmap/btn_gacha_card"
+                android:background="@null"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:scaleType="fitCenter"/>
+
+            <ImageView
+                android:id="@+id/gacha_fire_one_note"
+                android:src="@mipmap/btn_gacha_desc_2"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gacha_fire_ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dialog_normal_content_div"
+            android:orientation="vertical">
+
+            <jp.co.cybird.android.conanseek.common.BaseButton
+                android:id="@+id/gacha_fire_ten_button"
+                android:src="@mipmap/btn_gacha_10ren"
+                android:background="@null"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:scaleType="fitCenter"/>
+
+            <ImageView
+                android:id="@+id/gacha_fire_ten_note"
+                android:src="@mipmap/btn_gacha_10ren_desc_2"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

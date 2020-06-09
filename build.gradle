@@ -1,0 +1,51 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.2'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+    }
+
+    File propertiesFile = rootProject.file("key.properties")
+    if (propertiesFile.exists()) {
+        Properties properties = new Properties()
+        propertiesFile.withInputStream {
+            properties.load(it)
+        }
+        properties.entrySet().each {
+            project.ext.set(it.key, it.value)
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+task '★製品版および開発版APKを全て作成する' {
+    description "製品版と開発版のAPKを作成する。"
+    dependsOn '製品版APKを作成する'
+    dependsOn '開発版APKを作成する'
+}
+
+task '製品版APKを作成する' {
+    description "製品版APKを作成する。"
+    dependsOn ':app:assembleProductionCybirdRelease'
+}
+task '開発版APKを作成する' {
+    description "開発版APKを作成する。"
+    dependsOn ':app:assembleDevelopCybirdRelease'
+}

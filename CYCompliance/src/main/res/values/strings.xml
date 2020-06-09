@@ -1,0 +1,46 @@
+<resources>
+	<string name="app_name">AgreementSDK</string>
+
+	<!-- agreementsdk start -->
+	<string name="agreement_title">利用許諾</string>
+	<string name="agreement_agree">同意する</string>
+	<string name="agreement_decline">同意しない</string>
+	<string name="agreement_age_policy">20歳未満の方は保護者(お父さん・お母さん)の方と一緒に確認の上、必ず同意を得て下さい。</string>
+	<string name="agreement_browser_back">＜</string>
+	<string name="agreement_browser_forward">＞</string>
+
+	<string name="age_conf_title">年齢登録</string>
+	<string name="age_conf_confirmation">確認</string>
+	<string name="age_conf_cancel">キャンセル</string>
+	<string name="age_conf_text1">あなたの生年月を入力してください。</string>
+	<string name="age_conf_a_d">西暦</string>
+	<string name="age_conf_year">年</string>
+	<string name="age_conf_month">月</string>
+
+	<string name="age_regist_title">年齢確認</string>
+	<string name="age_regist_text2">この設定でよろしいですか？</string>
+	<string name="age_regist_text3">※登録内容は後から変更できません。</string>
+	<string name="age_regist_birth_year_month_text">生年月：</string>
+	<string name="age_regist_age_text">年齢：</string>
+	<string name="age_regist_age">%1$d歳</string>
+	<string name="age_regist_text4">※年齢は、誕生月が過ぎたタイミングで更新されます。\n※ご登録いただく生年月は、親権者(お父さん・お母さん)の同意が必要となる年齢(未成年)か、否かを判別するために使用します。\n未成年の場合は、親権者の同意画面に移ります。</string>
+	<string name="age_regist_registration">登録</string>
+	<string name="age_regist_date_format">yyyy年MM月</string>
+	<string name="retry">再読み込み</string>
+
+	<string name="minor_conf_title">親権者同意確認</string>
+	<string name="minor_conf_agree">はい</string>
+	<string name="minor_conf_decline">いいえ</string>
+	<string name="minor_error_title">おねがい</string>
+	<string name="minor_error_close">とじる</string>
+
+	<string name="age_conf_error01">未来が指定されています。</string>
+	<string name="age_conf_error02">データの保存に失敗しました。</string>
+
+	<integer name="max_year">0</integer><!-- 年齢確認を指定したい場合はここを変更すること -->
+	<integer name="min_year">1900</integer>
+
+	<string name="minor_conf_url">https://s3-ap-northeast-1.amazonaws.com/agreement.cybird.ne.jp/%1$s/minors.html</string>
+	<string name="minor_error_url">https://s3-ap-northeast-1.amazonaws.com/agreement.cybird.ne.jp/%1$s/error.html</string>
+	<!-- agreementsdk end -->
+</resources>

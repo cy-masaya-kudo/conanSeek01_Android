@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/wrapper">
+
+    <FrameLayout
+        android:id="@+id/wrapper_inner"
+        android:layout_width="@dimen/dialog_normal_size_width"
+        android:layout_height="@dimen/dialog_normal_size_height"
+        android:layout_gravity="center"
+        android:background="@mipmap/popup_background">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="@dimen/dialog_normal_margin"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/title_card" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="60dp"
+            android:src="@mipmap/notice"/>
+
+
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/btn_back"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/dialog_close_left"
+            android:layout_marginTop="@dimen/dialog_close_top"
+            android:id="@+id/dialog_close" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="@dimen/dialog_normal_margin">
+
+            <jp.co.cybird.android.conanseek.common.BaseButton
+                android:id="@+id/list_cell_1"
+                android:layout_width="80dp"
+                android:layout_height="110dp"
+                android:background="@mipmap/waku_deck"
+                android:padding="4dp"
+                android:layout_margin="8dp"
+                android:scaleType="fitCenter"/>
+            <jp.co.cybird.android.conanseek.common.BaseButton
+                android:id="@+id/list_cell_2"
+                android:layout_width="80dp"
+                android:layout_height="110dp"
+                android:background="@mipmap/waku_deck"
+                android:padding="4dp"
+                android:layout_margin="8dp"
+                android:scaleType="fitCenter"/>
+            <jp.co.cybird.android.conanseek.common.BaseButton
+                android:id="@+id/list_cell_3"
+                android:layout_width="80dp"
+                android:layout_height="110dp"
+                android:background="@mipmap/waku_deck"
+                android:padding="4dp"
+                android:layout_margin="8dp"
+                android:scaleType="fitCenter"/>
+            <jp.co.cybird.android.conanseek.common.BaseButton
+                android:id="@+id/list_cell_4"
+                android:layout_width="80dp"
+                android:layout_height="110dp"
+                android:background="@mipmap/waku_deck"
+                android:padding="4dp"
+                android:layout_margin="8dp"
+                android:scaleType="fitCenter"/>
+            <jp.co.cybird.android.conanseek.common.BaseButton
+                android:id="@+id/list_cell_5"
+                android:layout_width="80dp"
+                android:layout_height="110dp"
+                android:background="@mipmap/waku_deck"
+                android:padding="4dp"
+                android:layout_margin="8dp"
+                android:scaleType="fitCenter"/>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="@dimen/dialog_normal_margin">
+
+            <jp.co.cybird.android.conanseek.common.BaseButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/btn_gacha_matome"
+                android:background="@null"
+                android:id="@+id/dialog_left"
+                android:layout_marginRight="@dimen/dialog_footer_button_div"/>
+
+            <jp.co.cybird.android.conanseek.common.BaseButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/btn_gacha_card"
+                android:background="@null"
+                android:id="@+id/dialog_right" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

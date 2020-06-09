@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:tools="http://schemas.android.com/tools"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:orientation="vertical"
+			  android:id="@+id/dialog_layout_base"
+			  android:background="@color/minors_dialog_base_background">
+
+	<TextView
+		android:id="@+id/dialog_title_textview"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="@dimen/dialog_padding_around_content_area"
+		android:paddingRight="@dimen/dialog_padding_around_content_area"
+		android:paddingTop="@dimen/dialog_padding_around_content_area"
+		android:paddingBottom="@dimen/dialog_padding_bet_title_body"
+		android:text="Title is shown here!!"
+		android:textSize="24sp"
+		android:textStyle="bold"
+		tools:ignore="HardcodedText"
+		android:background="#00000000"/>
+
+	<LinearLayout
+		android:id="@+id/dialog_main_content_linearlayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_gravity="center"
+		android:paddingLeft="@dimen/dialog_padding_around_content_area"
+		android:paddingRight="@dimen/dialog_padding_around_content_area"
+		android:layout_weight="1"
+		android:background="#00000000">
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/daialog_action_area"
+		android:layout_width="wrap_content"
+		android:layout_height="@dimen/dialog_action_area"
+		android:orientation="horizontal"
+		android:layout_gravity="center_vertical|right"
+		android:background="#00000000"
+		>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/dialog_button_height"
+			android:minWidth="@dimen/dialog_button_min_width"
+			android:id="@+id/dialog_negative_button"
+			android:layout_marginRight="@dimen/dialog_padding_around_button"
+			android:text="ネガティブ"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/dialog_button_height"
+			android:minWidth="@dimen/dialog_button_min_width"
+			android:id="@+id/dialog_neutral_button"
+			android:layout_marginRight="@dimen/dialog_padding_around_button"
+			android:text="ナチュ"
+			android:visibility="gone"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/dialog_button_height"
+			android:minWidth="@dimen/dialog_button_min_width"
+			android:id="@+id/dialog_positive_button"
+			android:layout_marginRight="@dimen/dialog_padding_around_button"
+			android:text="ポジティブ"/>
+	</LinearLayout>
+
+
+</LinearLayout>

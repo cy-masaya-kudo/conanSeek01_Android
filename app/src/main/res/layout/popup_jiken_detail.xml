@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/wrapper">
+
+
+    <FrameLayout
+        android:id="@+id/wrapper_inner"
+        android:layout_width="@dimen/dialog_normal_size_width"
+        android:layout_height="@dimen/dialog_normal_size_height"
+        android:layout_gravity="center">
+
+
+        <jp.co.cybird.android.conanseek.common.UntouchableViewPager
+            android:id="@+id/card_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </jp.co.cybird.android.conanseek.common.UntouchableViewPager>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/text_corner_radius"/>
+
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:id="@+id/btn_asobikata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_gravity="top|right"
+            android:layout_margin="@dimen/dialog_normal_margin"
+            android:src="@mipmap/btn_asobikata"/>
+
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/btn_back"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/dialog_close_left"
+            android:layout_marginTop="@dimen/dialog_close_top"
+            android:id="@+id/dialog_close" />
+
+
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:id="@+id/blink_arrow_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_left_large"
+            android:background="@null"
+            android:layout_gravity="left|center_vertical"/>
+
+
+        <jp.co.cybird.android.conanseek.common.BaseButton
+            android:id="@+id/blink_arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_right_large"
+            android:background="@null"
+            android:layout_gravity="right|center_vertical"/>
+
+
+
+    </FrameLayout>
+
+
+</FrameLayout>
